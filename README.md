@@ -15,7 +15,11 @@ Keiyoushi's extensions are Android APKs: outside Mihon they only run inside Suwa
 ## Usage
 
 * In the reader, open **Settings → Browse → Extension stores**
-* Copy & paste the following URL: https://kirielios.github.io/tsuyoushi/index.json
+* Copy & paste the following URL:
+
+```
+https://kirielios.github.io/tsuyoushi/index.json
+```
 
 Every push to `main` rebuilds and republishes it (`.github/workflows/publish.yml`).
 
