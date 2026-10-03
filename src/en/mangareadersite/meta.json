@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangareadersite",
+  "name": "MangaReader.site",
+  "upstreamVersionCode": 0,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangahub",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangareader.site"
+    }
+  ]
+}

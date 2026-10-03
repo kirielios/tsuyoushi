@@ -1,0 +1,16 @@
+{
+  "pkg": "en.hiperdex",
+  "name": "Hiperdex",
+  "upstreamVersionCode": 81,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "hiper",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hiperdex.tv",
+      "customUrl": true
+    }
+  ]
+}

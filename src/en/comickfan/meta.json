@@ -1,0 +1,14 @@
+{
+  "pkg": "en.comickfan",
+  "name": "ComicK Fanmade",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://comickfan.com"
+    }
+  ]
+}

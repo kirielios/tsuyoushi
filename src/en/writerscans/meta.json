@@ -1,0 +1,15 @@
+{
+  "pkg": "en.writerscans",
+  "name": "Writer Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://writerscans.com"
+    }
+  ]
+}

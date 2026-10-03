@@ -1,0 +1,14 @@
+{
+  "pkg": "en.revivalscans",
+  "name": "Revival Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.revivalscans.com"
+    }
+  ]
+}

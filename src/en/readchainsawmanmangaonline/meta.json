@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readchainsawmanmangaonline",
+  "name": "Read Chainsaw Man Manga Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww6.readchainsawman.com"
+    }
+  ]
+}

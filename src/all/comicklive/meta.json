@@ -1,0 +1,18 @@
+{
+  "pkg": "all.comicklive",
+  "name": "Comick (Unoriginal)",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://comick.live",
+      "mirrors": [
+        "https://comick.live",
+        "https://comick.art"
+      ]
+    }
+  ]
+}

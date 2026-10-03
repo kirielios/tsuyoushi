@@ -1,0 +1,15 @@
+{
+  "pkg": "id.sektekomik",
+  "name": "Sekte Komik",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "colorlibanime",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://01.sektekomik.id"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.hentairead",
+  "name": "HentaiRead",
+  "upstreamVersionCode": 10,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "theme": "madaralegacy",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentairead.com"
+    }
+  ]
+}

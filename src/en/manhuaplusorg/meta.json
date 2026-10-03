@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhuaplusorg",
+  "name": "ManhuaPlus (Unoriginal)",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "liliana",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhuaplus.org"
+    }
+  ]
+}

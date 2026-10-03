@@ -1,0 +1,14 @@
+{
+  "pkg": "en.sabrinaonline",
+  "name": "Sabrina Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.sabrina-online.com"
+    }
+  ]
+}

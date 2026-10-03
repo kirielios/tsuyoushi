@@ -1,0 +1,14 @@
+{
+  "pkg": "en.collectedcurios",
+  "name": "Collected Curios",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.collectedcurios.com"
+    }
+  ]
+}

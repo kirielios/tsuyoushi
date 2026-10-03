@@ -1,0 +1,14 @@
+{
+  "pkg": "all.hentaicosplay",
+  "name": "Hentai Cosplay",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://hentai-cosplay-xxx.com"
+    }
+  ]
+}

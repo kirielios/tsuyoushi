@@ -1,0 +1,15 @@
+{
+  "pkg": "en.hentai3zcc",
+  "name": "Hentai3z.CC",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "manga18",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentai3z.cc"
+    }
+  ]
+}

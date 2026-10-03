@@ -1,0 +1,14 @@
+{
+  "pkg": "all.peppercarrot",
+  "name": "Pepper&Carrot",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.peppercarrot.com"
+    }
+  ]
+}

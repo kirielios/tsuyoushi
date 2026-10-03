@@ -1,0 +1,15 @@
+{
+  "pkg": "en.xoxocomics",
+  "name": "XOXO Comics",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "wpcomics",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://xoxocomic.com"
+    }
+  ]
+}

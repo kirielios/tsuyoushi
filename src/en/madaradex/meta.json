@@ -1,0 +1,15 @@
+{
+  "pkg": "en.madaradex",
+  "name": "MadaraDex",
+  "upstreamVersionCode": 3,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://madaradex.org"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.mangafox",
+  "name": "MangaFox",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://fanfox.net"
+    }
+  ]
+}

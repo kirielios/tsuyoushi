@@ -1,0 +1,19 @@
+{
+  "pkg": "all.hentaienvy",
+  "name": "HentaiEnvy",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "galleryadults",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentaienvy.com"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://hentaienvy.com"
+    }
+  ]
+}

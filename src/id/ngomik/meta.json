@@ -1,0 +1,15 @@
+{
+  "pkg": "id.ngomik",
+  "name": "Ngomik (unoriginal)",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://02.ngomik.cc"
+    }
+  ]
+}

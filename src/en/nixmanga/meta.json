@@ -1,0 +1,14 @@
+{
+  "pkg": "en.nixmanga",
+  "name": "NixManga",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://nixmanga.com"
+    }
+  ]
+}

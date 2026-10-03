@@ -1,0 +1,14 @@
+{
+  "pkg": "id.bacami",
+  "name": "Bacami",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v1.bacami.site"
+    }
+  ]
+}

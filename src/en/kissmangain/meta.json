@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kissmangain",
+  "name": "Kissmanga.in",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kissmanga.in"
+    }
+  ]
+}

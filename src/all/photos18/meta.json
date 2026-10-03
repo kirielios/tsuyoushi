@@ -1,0 +1,14 @@
+{
+  "pkg": "all.photos18",
+  "name": "Photos18",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.photos18.com"
+    }
+  ]
+}

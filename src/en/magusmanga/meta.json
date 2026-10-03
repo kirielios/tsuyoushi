@@ -1,0 +1,15 @@
+{
+  "pkg": "en.magusmanga",
+  "name": "Magus Manga",
+  "upstreamVersionCode": 46,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://magustoon.org"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangabuddy",
+  "name": "MangaK",
+  "upstreamVersionCode": 31,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangak",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangak.io"
+    }
+  ]
+}

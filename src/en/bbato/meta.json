@@ -1,0 +1,15 @@
+{
+  "pkg": "en.bbato",
+  "name": "Bbato",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://bato1.com",
+      "customUrl": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pkg": "all.hentaifox",
+  "name": "HentaiFox",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "galleryadults",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentaifox.com"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://hentaifox.com"
+    }
+  ]
+}

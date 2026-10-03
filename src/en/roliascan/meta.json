@@ -1,0 +1,15 @@
+{
+  "pkg": "en.roliascan",
+  "name": "Rolia Scan",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangataro",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://roliascan.com"
+    }
+  ]
+}

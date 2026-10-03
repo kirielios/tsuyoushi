@@ -1,0 +1,15 @@
+{
+  "pkg": "all.elitebabes",
+  "name": "Elite Babes",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "masonry",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.elitebabes.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "all.mangafire",
+  "name": "MangaFire",
+  "upstreamVersionCode": 34,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangafire.to"
+    }
+  ]
+}

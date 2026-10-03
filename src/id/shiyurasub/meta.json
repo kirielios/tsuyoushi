@@ -1,0 +1,15 @@
+{
+  "pkg": "id.shiyurasub",
+  "name": "ShiyuraSub",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://shiyurasub.blogspot.com"
+    }
+  ]
+}

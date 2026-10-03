@@ -1,0 +1,16 @@
+{
+  "pkg": "en.bakkinselfhosted",
+  "name": "Bakkin Self-hosted",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "bakkin",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "http://127.0.0.1/",
+      "customUrl": true
+    }
+  ]
+}

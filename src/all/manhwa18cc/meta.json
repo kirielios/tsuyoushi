@@ -1,0 +1,19 @@
+{
+  "pkg": "all.manhwa18cc",
+  "name": "Manhwa18.cc",
+  "upstreamVersionCode": 9,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwa18.cc"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://manhwa18.cc"
+    }
+  ]
+}

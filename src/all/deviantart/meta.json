@@ -1,0 +1,14 @@
+{
+  "pkg": "all.deviantart",
+  "name": "DeviantArt",
+  "upstreamVersionCode": 11,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.deviantart.com"
+    }
+  ]
+}

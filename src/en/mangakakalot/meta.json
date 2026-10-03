@@ -1,0 +1,19 @@
+{
+  "pkg": "en.mangakakalot",
+  "name": "Mangakakalot",
+  "upstreamVersionCode": 9,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangabox",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.mangakakalot.gg",
+      "mirrors": [
+        "https://www.mangakakalot.gg",
+        "https://www.mangakakalove.com"
+      ]
+    }
+  ]
+}

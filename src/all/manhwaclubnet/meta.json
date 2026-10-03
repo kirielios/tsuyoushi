@@ -1,0 +1,15 @@
+{
+  "pkg": "all.manhwaclubnet",
+  "name": "ManhwaClub.net",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwaclub.net"
+    }
+  ]
+}

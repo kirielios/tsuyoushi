@@ -1,0 +1,15 @@
+{
+  "pkg": "all.mango",
+  "name": "Mango",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "http://127.0.0.1:9000",
+      "customUrl": true
+    }
+  ]
+}

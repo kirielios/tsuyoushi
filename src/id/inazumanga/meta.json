@@ -1,0 +1,15 @@
+{
+  "pkg": "id.inazumanga",
+  "name": "ReYume",
+  "upstreamVersionCode": 29,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.re-yume.my.id"
+    }
+  ]
+}

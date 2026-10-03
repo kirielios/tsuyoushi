@@ -1,0 +1,19 @@
+{
+  "pkg": "all.imhentai",
+  "name": "IMHentai",
+  "upstreamVersionCode": 15,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "galleryadults",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://imhentai.xxx"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://imhentai.xxx"
+    }
+  ]
+}

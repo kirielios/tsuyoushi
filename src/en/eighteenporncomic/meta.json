@@ -1,0 +1,15 @@
+{
+  "pkg": "en.eighteenporncomic",
+  "name": "18 Porn Comic",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "manga18",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://18porncomic.com"
+    }
+  ]
+}

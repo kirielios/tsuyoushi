@@ -1,0 +1,19 @@
+{
+  "pkg": "all.manhuarm",
+  "name": "Manhuarm",
+  "upstreamVersionCode": 25,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "theme": "madaralegacy",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhuarmtl.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://manhuarmtl.com"
+    }
+  ]
+}

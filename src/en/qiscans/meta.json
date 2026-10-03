@@ -1,0 +1,16 @@
+{
+  "pkg": "en.qiscans",
+  "name": "Qi Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "ezmanhwa",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://qimanga.com",
+      "name": "QiScans"
+    }
+  ]
+}

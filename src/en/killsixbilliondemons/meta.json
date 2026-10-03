@@ -1,0 +1,15 @@
+{
+  "pkg": "en.killsixbilliondemons",
+  "name": "Kill Six Billion Demons",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://killsixbilliondemons.com",
+      "name": "KillSixBillionDemons"
+    }
+  ]
+}

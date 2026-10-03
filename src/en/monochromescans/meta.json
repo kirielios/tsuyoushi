@@ -1,0 +1,15 @@
+{
+  "pkg": "en.monochromescans",
+  "name": "Monochrome Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "monochrome",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manga.d34d.one"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.likemanga",
+  "name": "LikeManga",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://likemanga.ink"
+    }
+  ]
+}

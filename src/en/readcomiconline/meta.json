@@ -1,0 +1,18 @@
+{
+  "pkg": "en.readcomiconline",
+  "name": "ReadComicOnline",
+  "upstreamVersionCode": 44,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://readcomiconline.li",
+      "mirrors": [
+        "https://readcomiconline.li",
+        "https://rcostation.xyz"
+      ]
+    }
+  ]
+}

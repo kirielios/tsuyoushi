@@ -1,0 +1,14 @@
+{
+  "pkg": "en.saturdaymorningbreakfastcomics",
+  "name": "Saturday Morning Breakfast Comics",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://smbc-comics.com"
+    }
+  ]
+}

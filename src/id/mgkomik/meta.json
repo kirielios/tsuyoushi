@@ -1,0 +1,15 @@
+{
+  "pkg": "id.mgkomik",
+  "name": "MG Komik",
+  "upstreamVersionCode": 24,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://id.mgkomik.cc"
+    }
+  ]
+}

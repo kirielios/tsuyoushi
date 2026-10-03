@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readnanatsunotaizai7deadlysinsmangaonline",
+  "name": "Read Nanatsu no Taizai 7 Deadly Sins Manga Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww8.read7deadlysins.com"
+    }
+  ]
+}

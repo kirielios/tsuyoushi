@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readattackontitanshingekinokyojinmanga",
+  "name": "Read Attack on Titan Shingeki no Kyojin Manga",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww12.readsnk.com"
+    }
+  ]
+}

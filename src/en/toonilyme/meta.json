@@ -1,0 +1,15 @@
+{
+  "pkg": "en.toonilyme",
+  "name": "Toonily.me",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangak",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://toontop.io"
+    }
+  ]
+}

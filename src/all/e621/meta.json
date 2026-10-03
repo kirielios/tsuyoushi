@@ -1,0 +1,14 @@
+{
+  "pkg": "all.e621",
+  "name": "e621",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://e621.net"
+    }
+  ]
+}

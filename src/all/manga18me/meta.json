@@ -1,0 +1,20 @@
+{
+  "pkg": "all.manga18me",
+  "name": "Manga18Me",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://manga18.me",
+      "name": "Manga18.me"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://manga18.me",
+      "name": "Manga18.me"
+    }
+  ]
+}

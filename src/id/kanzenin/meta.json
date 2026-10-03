@@ -1,0 +1,15 @@
+{
+  "pkg": "id.kanzenin",
+  "name": "Kanzenin",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://kanzenin.info"
+    }
+  ]
+}

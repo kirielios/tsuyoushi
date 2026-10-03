@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangatellers",
+  "name": "Mangatellers",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "foolslide",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://reader.mangatellers.gr"
+    }
+  ]
+}

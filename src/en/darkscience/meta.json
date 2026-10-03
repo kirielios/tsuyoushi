@@ -1,0 +1,14 @@
+{
+  "pkg": "en.darkscience",
+  "name": "Dark Science",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://dresdencodak.com"
+    }
+  ]
+}

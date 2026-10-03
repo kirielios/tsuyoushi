@@ -1,0 +1,15 @@
+{
+  "pkg": "en.valirscans",
+  "name": "Valir Scans",
+  "upstreamVersionCode": 22,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "vinetheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://valirscans.org"
+    }
+  ]
+}

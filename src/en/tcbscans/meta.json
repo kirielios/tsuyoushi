@@ -1,0 +1,14 @@
+{
+  "pkg": "en.tcbscans",
+  "name": "TCB Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://tcbonepiecechapters.com"
+    }
+  ]
+}

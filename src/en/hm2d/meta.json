@@ -1,0 +1,15 @@
+{
+  "pkg": "en.hm2d",
+  "name": "HM2D",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://doujindistrict.com"
+    }
+  ]
+}

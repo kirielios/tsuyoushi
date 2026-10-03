@@ -1,0 +1,14 @@
+{
+  "pkg": "id.mangalay",
+  "name": "Mangalay",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "http://mangalay.blogspot.com"
+    }
+  ]
+}

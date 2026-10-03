@@ -1,0 +1,18 @@
+{
+  "pkg": "all.onisaga",
+  "name": "OniSaga",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://onisaga.com"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://onisaga.com"
+    }
+  ]
+}

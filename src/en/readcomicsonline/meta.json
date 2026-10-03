@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readcomicsonline",
+  "name": "Read Comics Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mmrcms",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://readcomicsonline.ru"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pkg": "en.spyfakku",
+  "name": "SpyFakku",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentalk.pw",
+      "mirrors": [
+        "https://hentalk.pw",
+        "https://fakku.cc",
+        "https://fakkuonion.airdns.org:4096"
+      ]
+    }
+  ]
+}

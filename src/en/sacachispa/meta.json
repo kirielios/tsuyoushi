@@ -1,0 +1,14 @@
+{
+  "pkg": "en.sacachispa",
+  "name": "SACACHISPA",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://sacachispa.site"
+    }
+  ]
+}

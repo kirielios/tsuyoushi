@@ -1,0 +1,15 @@
+{
+  "pkg": "id.sektedoujin",
+  "name": "Sekte Doujin",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://sektedoujin.cc"
+    }
+  ]
+}

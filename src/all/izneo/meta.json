@@ -1,0 +1,15 @@
+{
+  "pkg": "all.izneo",
+  "name": "izneo (webtoons)",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.izneo.com/en/webtoon",
+      "name": "izneo"
+    }
+  ]
+}

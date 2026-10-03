@@ -1,0 +1,15 @@
+{
+  "pkg": "id.klikmanga",
+  "name": "KlikManga",
+  "upstreamVersionCode": 5,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://klikmanga.org"
+    }
+  ]
+}

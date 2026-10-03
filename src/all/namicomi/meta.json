@@ -1,0 +1,18 @@
+{
+  "pkg": "all.namicomi",
+  "name": "NamiComi",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://namicomi.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://namicomi.com"
+    }
+  ]
+}

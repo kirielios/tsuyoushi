@@ -1,0 +1,15 @@
+{
+  "pkg": "id.Luvyaa",
+  "name": "Luvyaa",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v5.luvyaa.co"
+    }
+  ]
+}

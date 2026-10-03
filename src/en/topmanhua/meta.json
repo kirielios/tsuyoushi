@@ -1,0 +1,15 @@
+{
+  "pkg": "en.topmanhua",
+  "name": "Top Manhua",
+  "upstreamVersionCode": 7,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangatop.org"
+    }
+  ]
+}

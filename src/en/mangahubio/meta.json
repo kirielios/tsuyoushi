@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangahubio",
+  "name": "MangaHub",
+  "upstreamVersionCode": 10,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangahub",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangahub.io"
+    }
+  ]
+}

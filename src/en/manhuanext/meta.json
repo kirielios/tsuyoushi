@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhuanext",
+  "name": "Manhuanext",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhuanext.com"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "pkg": "en.manhwaread",
+  "name": "ManhwaRead",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwaread.com",
+      "mirrors": [
+        "https://manhwaread.com",
+        "https://manhwaread.org"
+      ]
+    }
+  ]
+}

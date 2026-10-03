@@ -1,0 +1,15 @@
+{
+  "pkg": "en.tritiniascans",
+  "name": "TritiniaScans",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://tritinia.org"
+    }
+  ]
+}

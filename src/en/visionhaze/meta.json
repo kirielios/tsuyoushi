@@ -1,0 +1,14 @@
+{
+  "pkg": "en.visionhaze",
+  "name": "Vision Haze",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.visionhaze.com"
+    }
+  ]
+}

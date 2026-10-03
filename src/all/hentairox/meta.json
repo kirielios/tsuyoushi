@@ -1,0 +1,19 @@
+{
+  "pkg": "all.hentairox",
+  "name": "HentaiRox",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "galleryadults",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentairox.com"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://hentairox.com"
+    }
+  ]
+}

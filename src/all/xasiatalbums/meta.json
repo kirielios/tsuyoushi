@@ -1,0 +1,15 @@
+{
+  "pkg": "all.xasiatalbums",
+  "name": "Xasiat Albums",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.xasiat.com",
+      "name": "XAsiat Albums"
+    }
+  ]
+}

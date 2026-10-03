@@ -1,0 +1,15 @@
+{
+  "pkg": "all.magicaltranslators",
+  "name": "Magical Translators",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "guya",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mahoushoujobu.com"
+    }
+  ]
+}

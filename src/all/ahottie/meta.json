@@ -1,0 +1,14 @@
+{
+  "pkg": "all.ahottie",
+  "name": "AHottie",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://ahottie.top"
+    }
+  ]
+}

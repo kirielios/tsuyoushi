@@ -1,0 +1,14 @@
+{
+  "pkg": "en.webnovel",
+  "name": "WebNovel",
+  "upstreamVersionCode": 14,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.webnovel.com"
+    }
+  ]
+}

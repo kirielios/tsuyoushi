@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readtokyoghoulretokyoghoulmangaonline",
+  "name": "Read Tokyo Ghoul Re & Tokyo Ghoul Manga Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww12.tokyoghoulre.com"
+    }
+  ]
+}

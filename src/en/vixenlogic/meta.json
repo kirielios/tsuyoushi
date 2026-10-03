@@ -1,0 +1,14 @@
+{
+  "pkg": "en.vixenlogic",
+  "name": "Vixen Logic",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.vixenlogic.com"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangaowlio",
+  "name": "MangaOwl.io (unoriginal)",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangaowl.io"
+    }
+  ]
+}

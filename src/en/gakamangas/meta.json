@@ -1,0 +1,15 @@
+{
+  "pkg": "en.gakamangas",
+  "name": "GakaMangas",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://gakamangas.com"
+    }
+  ]
+}

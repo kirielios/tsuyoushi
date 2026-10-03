@@ -1,0 +1,15 @@
+{
+  "pkg": "id.soulscans",
+  "name": "Soul Scans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "loneseal",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v1.soulscans.org"
+    }
+  ]
+}

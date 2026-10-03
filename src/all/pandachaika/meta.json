@@ -1,0 +1,22 @@
+{
+  "pkg": "all.pandachaika",
+  "name": "PandaChaika",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://panda.chaika.moe"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://panda.chaika.moe"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://panda.chaika.moe"
+    }
+  ]
+}

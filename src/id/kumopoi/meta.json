@@ -1,0 +1,15 @@
+{
+  "pkg": "id.kumopoi",
+  "name": "KumoPoi",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://beta.kumopoi.com",
+      "customUrl": true
+    }
+  ]
+}

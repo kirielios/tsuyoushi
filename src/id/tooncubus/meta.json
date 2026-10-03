@@ -1,0 +1,15 @@
+{
+  "pkg": "id.tooncubus",
+  "name": "Tooncubus",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.tooncubus.top"
+    }
+  ]
+}

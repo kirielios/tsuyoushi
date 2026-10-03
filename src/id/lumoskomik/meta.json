@@ -1,0 +1,15 @@
+{
+  "pkg": "id.lumoskomik",
+  "name": "LumosKomik",
+  "upstreamVersionCode": 56,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "hwalumi",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://03.lumosgg.com"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "pkg": "all.luscious",
+  "name": "Luscious",
+  "upstreamVersionCode": 32,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.luscious.net",
+      "mirrors": [
+        "https://www.luscious.net",
+        "https://members.luscious.net"
+      ]
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://www.luscious.net",
+      "mirrors": [
+        "https://www.luscious.net",
+        "https://members.luscious.net"
+      ]
+    }
+  ]
+}

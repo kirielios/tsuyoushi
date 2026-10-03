@@ -1,0 +1,15 @@
+{
+  "pkg": "id.lianscans",
+  "name": "LianScans",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.lianscans.com"
+    }
+  ]
+}

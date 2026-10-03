@@ -1,0 +1,14 @@
+{
+  "pkg": "id.softkomik",
+  "name": "Softkomik",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://softkomik.co"
+    }
+  ]
+}

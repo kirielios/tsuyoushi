@@ -1,0 +1,15 @@
+{
+  "pkg": "id.natsu",
+  "name": "Natsu",
+  "upstreamVersionCode": 33,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "natsuid",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://natsu.one"
+    }
+  ]
+}

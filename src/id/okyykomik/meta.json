@@ -1,0 +1,15 @@
+{
+  "pkg": "id.okyykomik",
+  "name": "OkyyKomik",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.okyykomik.my.id"
+    }
+  ]
+}

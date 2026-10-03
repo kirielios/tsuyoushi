@@ -1,0 +1,15 @@
+{
+  "pkg": "id.ikiru",
+  "name": "Ikiru",
+  "upstreamVersionCode": 50,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "natsuid",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://08.ikiru.wtf"
+    }
+  ]
+}

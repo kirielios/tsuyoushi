@@ -1,0 +1,15 @@
+{
+  "pkg": "en.ezmanga",
+  "name": "EZmanga",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "ezmanhwa",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ezmanga.org"
+    }
+  ]
+}

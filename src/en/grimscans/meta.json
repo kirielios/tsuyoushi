@@ -1,0 +1,15 @@
+{
+  "pkg": "en.grimscans",
+  "name": "Grim Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://grimscans.com"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pkg": "id.komikdewasa",
+  "name": "Komik Dewasa",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://komikdewasa.mom",
+      "name": "Komik Dewasak"
+    }
+  ]
+}

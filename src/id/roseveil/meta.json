@@ -1,0 +1,15 @@
+{
+  "pkg": "id.roseveil",
+  "name": "Roseveil",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "loneseal",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://roseveil.org"
+    }
+  ]
+}

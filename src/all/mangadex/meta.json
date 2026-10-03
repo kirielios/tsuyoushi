@@ -1,0 +1,18 @@
+{
+  "pkg": "all.mangadex",
+  "name": "MangaDex",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangadex.org"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://mangadex.org"
+    }
+  ]
+}

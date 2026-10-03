@@ -1,0 +1,15 @@
+{
+  "pkg": "en.honkaiimpact",
+  "name": "HonkaiImpact3",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manga.honkaiimpact3.com",
+      "name": "Honkai Impact 3rd"
+    }
+  ]
+}

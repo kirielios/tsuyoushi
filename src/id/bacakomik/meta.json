@@ -1,0 +1,14 @@
+{
+  "pkg": "id.bacakomik",
+  "name": "BacaKomik",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://bacakomik.my"
+    }
+  ]
+}

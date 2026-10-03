@@ -1,0 +1,14 @@
+{
+  "pkg": "en.kodansha",
+  "name": "Kodansha",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kodansha.us"
+    }
+  ]
+}

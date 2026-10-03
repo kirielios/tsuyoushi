@@ -1,0 +1,14 @@
+{
+  "pkg": "en.swordscomic",
+  "name": "Swords Comic",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://swordscomic.com"
+    }
+  ]
+}

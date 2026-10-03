@@ -1,0 +1,20 @@
+{
+  "pkg": "en.vizshonenjump",
+  "name": "VIZ",
+  "upstreamVersionCode": 29,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.viz.com",
+      "name": "VIZ Shonen Jump"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://www.viz.com",
+      "name": "VIZ Manga"
+    }
+  ]
+}

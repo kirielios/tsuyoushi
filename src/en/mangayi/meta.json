@@ -1,0 +1,14 @@
+{
+  "pkg": "en.mangayi",
+  "name": "MangaYi",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangayi.com"
+    }
+  ]
+}

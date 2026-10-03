@@ -1,0 +1,15 @@
+{
+  "pkg": "id.astralscans",
+  "name": "Astral Scans",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://astralscans.site"
+    }
+  ]
+}

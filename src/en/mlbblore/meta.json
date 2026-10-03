@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mlbblore",
+  "name": "MLBB Lore",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://play.mobilelegends.com",
+      "name": "MLBB Lore Comics"
+    }
+  ]
+}

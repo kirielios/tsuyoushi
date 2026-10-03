@@ -1,0 +1,15 @@
+{
+  "pkg": "en.elftoon",
+  "name": "Elf Toon",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://elftoon.com"
+    }
+  ]
+}

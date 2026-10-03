@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manga18club",
+  "name": "Manga18.Club",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "manga18",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manga18.club"
+    }
+  ]
+}

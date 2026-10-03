@@ -1,0 +1,14 @@
+{
+  "pkg": "all.projectsuki",
+  "name": "Project Suki",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://projectsuki.com"
+    }
+  ]
+}

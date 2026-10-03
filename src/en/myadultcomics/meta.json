@@ -1,0 +1,14 @@
+{
+  "pkg": "en.myadultcomics",
+  "name": "MyAdultComics",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://myadultcomics.com"
+    }
+  ]
+}

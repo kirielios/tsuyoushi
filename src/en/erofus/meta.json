@@ -1,0 +1,15 @@
+{
+  "pkg": "en.erofus",
+  "name": "Erofus",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "eromuse",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.erofus.com"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kewnscans",
+  "name": "Kewn Scans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kewnscans.org"
+    }
+  ]
+}

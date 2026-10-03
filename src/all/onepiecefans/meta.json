@@ -1,0 +1,14 @@
+{
+  "pkg": "all.onepiecefans",
+  "name": "One Piece Fans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://one-piece-fans2.com"
+    }
+  ]
+}

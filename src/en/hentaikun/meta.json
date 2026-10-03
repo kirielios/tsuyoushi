@@ -1,0 +1,14 @@
+{
+  "pkg": "en.hentaikun",
+  "name": "HentaiKun",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentaikun.com"
+    }
+  ]
+}

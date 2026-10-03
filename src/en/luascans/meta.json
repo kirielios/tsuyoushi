@@ -1,0 +1,15 @@
+{
+  "pkg": "en.luascans",
+  "name": "Lua Scans",
+  "upstreamVersionCode": 20,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "heancms",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://luacomic.org"
+    }
+  ]
+}

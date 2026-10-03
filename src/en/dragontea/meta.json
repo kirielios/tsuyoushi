@@ -1,0 +1,15 @@
+{
+  "pkg": "en.dragontea",
+  "name": "DragonTea",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://dragontea.ink"
+    }
+  ]
+}

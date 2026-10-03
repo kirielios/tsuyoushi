@@ -1,0 +1,40 @@
+{
+  "pkg": "all.xcomic",
+  "name": "XCOMIC",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://xcomic.me",
+      "mirrors": [
+        "https://xcomic.me",
+        "https://xcomic.net",
+        "https://comik.to",
+        "https://yona.to"
+      ]
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://xcomic.me",
+      "mirrors": [
+        "https://xcomic.me",
+        "https://xcomic.net",
+        "https://comik.to",
+        "https://yona.to"
+      ]
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://xcomic.me",
+      "mirrors": [
+        "https://xcomic.me",
+        "https://xcomic.net",
+        "https://comik.to",
+        "https://yona.to"
+      ]
+    }
+  ]
+}

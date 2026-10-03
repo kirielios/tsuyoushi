@@ -1,0 +1,15 @@
+{
+  "pkg": "en.comicasura",
+  "name": "Comic Asura",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://comicasura.net"
+    }
+  ]
+}

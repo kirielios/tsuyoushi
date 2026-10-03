@@ -1,0 +1,15 @@
+{
+  "pkg": "id.ainzscansid",
+  "name": "Ainz Scans ID",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "loneseal",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v3.ainzscans01.com"
+    }
+  ]
+}

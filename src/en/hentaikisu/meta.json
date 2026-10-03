@@ -1,0 +1,14 @@
+{
+  "pkg": "en.hentaikisu",
+  "name": "HentaiKisu",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentaikisu.com"
+    }
+  ]
+}

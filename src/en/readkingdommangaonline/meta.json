@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readkingdommangaonline",
+  "name": "Read Kingdom Manga Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww6.readkingdom.com"
+    }
+  ]
+}

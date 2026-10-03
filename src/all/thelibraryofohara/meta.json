@@ -1,0 +1,18 @@
+{
+  "pkg": "all.thelibraryofohara",
+  "name": "The Library of Ohara",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://thelibraryofohara.com"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://thelibraryofohara.com"
+    }
+  ]
+}

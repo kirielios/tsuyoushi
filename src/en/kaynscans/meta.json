@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kaynscans",
+  "name": "Kayn Scans",
+  "upstreamVersionCode": 31,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "vinetheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kaynscans.com"
+    }
+  ]
+}

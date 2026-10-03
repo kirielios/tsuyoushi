@@ -1,0 +1,18 @@
+{
+  "pkg": "all.manga18fx",
+  "name": "Manga18fx",
+  "upstreamVersionCode": 58,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://manga18fx.com"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://manga18fx.com"
+    }
+  ]
+}

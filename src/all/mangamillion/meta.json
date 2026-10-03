@@ -1,0 +1,18 @@
+{
+  "pkg": "all.mangamillion",
+  "name": "Manga Million",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangamillion.shueisha.co.jp"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://mangamillion.shueisha.co.jp"
+    }
+  ]
+}

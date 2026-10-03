@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangafoxfun",
+  "name": "MangaFox.fun",
+  "upstreamVersionCode": 0,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangahub",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangafox.fun"
+    }
+  ]
+}

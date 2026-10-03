@@ -1,0 +1,14 @@
+{
+  "pkg": "en.mangareadercc",
+  "name": "MangaReader.in",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangareader.in"
+    }
+  ]
+}

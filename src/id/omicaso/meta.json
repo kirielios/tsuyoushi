@@ -1,0 +1,15 @@
+{
+  "pkg": "id.omicaso",
+  "name": "Omicaso",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://omicaso.org"
+    }
+  ]
+}

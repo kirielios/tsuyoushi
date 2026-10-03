@@ -1,0 +1,15 @@
+{
+  "pkg": "all.sandraandwoo",
+  "name": "Sandra and Woo",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.sandraandwoo.com",
+      "name": "Sandra und Woo"
+    }
+  ]
+}

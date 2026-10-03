@@ -1,0 +1,14 @@
+{
+  "pkg": "en.greedscans",
+  "name": "Greed Scans",
+  "upstreamVersionCode": 32,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://gojoscans.com"
+    }
+  ]
+}

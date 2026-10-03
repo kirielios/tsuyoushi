@@ -1,0 +1,15 @@
+{
+  "pkg": "all.vinnieVeritas",
+  "name": "Vinne Veritas - CCC",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ccc.vinnieveritas.com",
+      "name": "Vinnie Veritas - CCC"
+    }
+  ]
+}

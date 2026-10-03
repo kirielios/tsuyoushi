@@ -1,0 +1,14 @@
+{
+  "pkg": "en.sunshinebutterflyscans",
+  "name": "Sunshine Butterfly Scans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://wings.sbs"
+    }
+  ]
+}

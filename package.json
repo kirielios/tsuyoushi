@@ -1,0 +1,28 @@
+{
+  "name": "tsuyoushi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Keiyoushi (Mihon) manga extensions ported to TypeScript, English and Indonesian. Installed into the manga reader by URL.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx tools/generate.ts",
+    "build": "tsx tools/build.ts",
+    "serve": "tsx tools/serve.ts",
+    "check": "tsx tools/check.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tools/test-sdk.ts",
+    "upstream": "tsx tools/upstream.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "cheerio": "^1.2.0",
+    "esbuild": "^0.28.2",
+    "sharp": "^0.35.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

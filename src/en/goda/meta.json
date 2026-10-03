@@ -1,0 +1,15 @@
+{
+  "pkg": "en.goda",
+  "name": "Goda",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "goda",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhuascans.org"
+    }
+  ]
+}

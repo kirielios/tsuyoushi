@@ -1,0 +1,15 @@
+{
+  "pkg": "en.murimscan",
+  "name": "MurimScan",
+  "upstreamVersionCode": 36,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.murimscans.site"
+    }
+  ]
+}

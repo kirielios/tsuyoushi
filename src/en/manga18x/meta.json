@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manga18x",
+  "name": "Manga 18x",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manga18x.net"
+    }
+  ]
+}

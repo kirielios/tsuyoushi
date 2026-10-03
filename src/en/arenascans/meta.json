@@ -1,0 +1,15 @@
+{
+  "pkg": "en.arenascans",
+  "name": "Arena Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://arenascan.com"
+    }
+  ]
+}

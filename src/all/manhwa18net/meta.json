@@ -1,0 +1,15 @@
+{
+  "pkg": "all.manhwa18net",
+  "name": "Manhwa18.net",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwa18.net",
+      "name": "Manhwa18.Net"
+    }
+  ]
+}

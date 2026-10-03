@@ -1,0 +1,14 @@
+{
+  "pkg": "all.commitstrip",
+  "name": "Commit Strip",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.commitstrip.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "all.yabai",
+  "name": "Yabai",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://yabai.si"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Tsuyoushi
+Copyright 2026 the Tsuyoushi contributors
+
+This project contains TypeScript ports of manga source extensions from
+keiyoushi/extensions-source (https://github.com/keiyoushi/extensions-source),
+licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Changes from the original work:
+- Kotlin source files are translated to TypeScript, one port per upstream
+  extension, under src/<lang>/<name>/. Each port names its upstream file in a
+  header comment.
+- The Mihon/Keiyoushi runtime APIs they call (KeiSource, Jsoup, OkHttp helpers)
+  are reimplemented in sdk/ on top of cheerio and the host application's fetch.
+- Only English and Indonesian sources are ported.

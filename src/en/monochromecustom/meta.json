@@ -1,0 +1,16 @@
+{
+  "pkg": "en.monochromecustom",
+  "name": "Monochrome Custom",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "monochrome",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://monochromecms.netlify.app",
+      "customUrl": true
+    }
+  ]
+}

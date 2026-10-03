@@ -1,0 +1,18 @@
+{
+  "pkg": "all.kagane",
+  "name": "Kagane",
+  "upstreamVersionCode": 31,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kagane.to"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://kagane.to"
+    }
+  ]
+}

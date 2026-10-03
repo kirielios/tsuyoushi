@@ -1,0 +1,15 @@
+{
+  "pkg": "en.aurora",
+  "name": "aurora",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://comicaurora.com",
+      "name": "Aurora"
+    }
+  ]
+}

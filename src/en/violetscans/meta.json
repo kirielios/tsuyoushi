@@ -1,0 +1,15 @@
+{
+  "pkg": "en.violetscans",
+  "name": "Violet Scans",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://violetscans.org"
+    }
+  ]
+}

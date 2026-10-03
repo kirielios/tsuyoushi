@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangatrend",
+  "name": "Manga Trend",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangatrend.org"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "all.hennojin",
+  "name": "Hennojin",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hennojin.com"
+    }
+  ]
+}

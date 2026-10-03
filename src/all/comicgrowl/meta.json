@@ -1,0 +1,15 @@
+{
+  "pkg": "all.comicgrowl",
+  "name": "Comic Growl",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "comiciviewer",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://comic-growl.com"
+    }
+  ]
+}

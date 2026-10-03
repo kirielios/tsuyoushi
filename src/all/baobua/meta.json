@@ -1,0 +1,14 @@
+{
+  "pkg": "all.baobua",
+  "name": "BaoBua",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://baobua.net"
+    }
+  ]
+}

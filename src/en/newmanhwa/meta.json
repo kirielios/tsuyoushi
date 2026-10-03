@@ -1,0 +1,14 @@
+{
+  "pkg": "en.newmanhwa",
+  "name": "New Manhwa",
+  "upstreamVersionCode": 35,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://saymanhwa.com"
+    }
+  ]
+}

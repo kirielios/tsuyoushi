@@ -1,0 +1,14 @@
+{
+  "pkg": "en.akaicomic",
+  "name": "Akai Comic",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://akaicomic.org"
+    }
+  ]
+}

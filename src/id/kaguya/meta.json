@@ -1,0 +1,15 @@
+{
+  "pkg": "id.kaguya",
+  "name": "Kaguya",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://02.kaguya.pro"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.assortedscans",
+  "name": "Assorted Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangadventure",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://assortedscans.com"
+    }
+  ]
+}

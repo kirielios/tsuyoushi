@@ -1,0 +1,15 @@
+{
+  "pkg": "all.hniscantrad",
+  "name": "HNI-Scantrad",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "pizzareader",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://hni-scantrad.net"
+    }
+  ]
+}

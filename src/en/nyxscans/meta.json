@@ -1,0 +1,15 @@
+{
+  "pkg": "en.nyxscans",
+  "name": "Nyx Scans",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://nyxscans.com"
+    }
+  ]
+}

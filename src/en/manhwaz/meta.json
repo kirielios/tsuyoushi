@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhwaz",
+  "name": "ManhwaZ",
+  "upstreamVersionCode": 37,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "manhwaz",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwaz.com"
+    }
+  ]
+}

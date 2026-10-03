@@ -1,0 +1,15 @@
+{
+  "pkg": "id.kiryuu",
+  "name": "Kiryuu",
+  "upstreamVersionCode": 52,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "natsuid",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v7.kiryuu.to"
+    }
+  ]
+}

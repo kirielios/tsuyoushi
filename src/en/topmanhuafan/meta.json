@@ -1,0 +1,15 @@
+{
+  "pkg": "en.topmanhuafan",
+  "name": "TopManhua.fan",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.topmanhua.fan"
+    }
+  ]
+}

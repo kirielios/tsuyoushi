@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhuazonghe",
+  "name": "Manhua Zonghe",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.manhuazonghe.com"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pkg": "id.doujinku",
+  "name": "Doujinku",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://doujinku.org",
+      "customUrl": true
+    }
+  ]
+}

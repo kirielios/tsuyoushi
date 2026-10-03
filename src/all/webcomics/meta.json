@@ -1,0 +1,18 @@
+{
+  "pkg": "all.webcomics",
+  "name": "Webcomics",
+  "upstreamVersionCode": 11,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://webcomicsapp.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://webcomicsapp.com"
+    }
+  ]
+}

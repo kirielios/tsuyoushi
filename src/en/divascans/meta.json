@@ -1,0 +1,15 @@
+{
+  "pkg": "en.divascans",
+  "name": "Diva Scans",
+  "upstreamVersionCode": 25,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "vinetheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://divascans.org"
+    }
+  ]
+}

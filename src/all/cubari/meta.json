@@ -1,0 +1,18 @@
+{
+  "pkg": "all.cubari",
+  "name": "Cubari",
+  "upstreamVersionCode": 26,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://cubari.moe"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://cubari.moe"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "pkg": "all.koharu",
+  "name": "SchaleNetwork",
+  "upstreamVersionCode": 20,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://schale.network",
+      "mirrors": [
+        "https://schale.network",
+        "https://anchira.to",
+        "https://gehenna.jp",
+        "https://niyaniya.moe",
+        "https://shupogaki.moe"
+      ]
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://schale.network",
+      "mirrors": [
+        "https://schale.network",
+        "https://anchira.to",
+        "https://gehenna.jp",
+        "https://niyaniya.moe",
+        "https://shupogaki.moe"
+      ]
+    }
+  ]
+}

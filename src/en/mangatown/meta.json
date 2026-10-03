@@ -1,0 +1,14 @@
+{
+  "pkg": "en.mangatown",
+  "name": "Mangatown",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.mangatown.com"
+    }
+  ]
+}

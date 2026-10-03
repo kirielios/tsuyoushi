@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mistscans",
+  "name": "Mist Scans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mistscans.com"
+    }
+  ]
+}

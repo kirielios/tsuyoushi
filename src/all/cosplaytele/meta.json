@@ -1,0 +1,14 @@
+{
+  "pkg": "all.cosplaytele",
+  "name": "CosplayTele",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://cosplaytele.com"
+    }
+  ]
+}

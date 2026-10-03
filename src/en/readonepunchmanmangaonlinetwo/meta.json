@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readonepunchmanmangaonlinetwo",
+  "name": "Read One-Punch Man Manga Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww7.readopm.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.xomanga",
+  "name": "XoManga",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.xomanga.site"
+    }
+  ]
+}

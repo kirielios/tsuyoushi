@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kingofshojo",
+  "name": "King of Shojo",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kingofshojo.com"
+    }
+  ]
+}

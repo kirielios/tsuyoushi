@@ -1,0 +1,18 @@
+{
+  "pkg": "all.myreadingmanga",
+  "name": "MyReadingManga",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://myreadingmanga.info"
+    }
+  ]
+}

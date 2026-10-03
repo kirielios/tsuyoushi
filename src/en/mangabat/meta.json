@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangabat",
+  "name": "Mangabat",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangabox",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.mangabats.com"
+    }
+  ]
+}

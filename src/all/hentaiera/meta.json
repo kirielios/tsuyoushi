@@ -1,0 +1,19 @@
+{
+  "pkg": "all.hentaiera",
+  "name": "HentaiEra",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "galleryadults",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentaiera.com"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://hentaiera.com"
+    }
+  ]
+}

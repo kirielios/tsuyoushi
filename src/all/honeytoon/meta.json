@@ -1,0 +1,14 @@
+{
+  "pkg": "all.honeytoon",
+  "name": "Honeytoon",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://honeytoon.com"
+    }
+  ]
+}

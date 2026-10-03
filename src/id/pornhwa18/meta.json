@@ -1,0 +1,15 @@
+{
+  "pkg": "id.pornhwa18",
+  "name": "Pornhwa18",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "theme": "madaralegacy",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://pornhwa18.com"
+    }
+  ]
+}

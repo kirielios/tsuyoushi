@@ -1,0 +1,15 @@
+{
+  "pkg": "en.hachirumi",
+  "name": "Hachirumi",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "guya",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hachirumi.com"
+    }
+  ]
+}

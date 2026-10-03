@@ -1,0 +1,15 @@
+{
+  "pkg": "id.mangakuri",
+  "name": "Mangakuri",
+  "upstreamVersionCode": 35,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "loneseal",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://lc2.mangakuri.online"
+    }
+  ]
+}

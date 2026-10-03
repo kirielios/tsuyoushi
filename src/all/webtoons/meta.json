@@ -1,0 +1,18 @@
+{
+  "pkg": "all.webtoons",
+  "name": "Webtoons.com",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.webtoons.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://www.webtoons.com"
+    }
+  ]
+}

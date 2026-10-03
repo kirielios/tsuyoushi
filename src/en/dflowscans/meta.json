@@ -1,0 +1,14 @@
+{
+  "pkg": "en.dflowscans",
+  "name": "DFlowScans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://dflow.alwaysdata.net"
+    }
+  ]
+}

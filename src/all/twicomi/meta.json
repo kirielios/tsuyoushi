@@ -1,0 +1,14 @@
+{
+  "pkg": "all.twicomi",
+  "name": "Twicomi",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://twicomi.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.alandal",
+  "name": "Alandal",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://alandal.com"
+    }
+  ]
+}

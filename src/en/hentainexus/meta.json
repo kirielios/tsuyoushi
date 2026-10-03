@@ -1,0 +1,14 @@
+{
+  "pkg": "en.hentainexus",
+  "name": "HentaiNexus",
+  "upstreamVersionCode": 20,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentainexus.com"
+    }
+  ]
+}

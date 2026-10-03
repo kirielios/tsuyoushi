@@ -1,0 +1,18 @@
+{
+  "pkg": "all.holonometria",
+  "name": "HOLONOMETRIA",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://holoearth.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://holoearth.com"
+    }
+  ]
+}

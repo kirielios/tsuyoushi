@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangadrama",
+  "name": "Manga Drama",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "theme": "madaralegacy",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangadrama.com"
+    }
+  ]
+}

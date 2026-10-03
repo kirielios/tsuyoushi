@@ -1,0 +1,15 @@
+{
+  "pkg": "en.paradisescans",
+  "name": "Paradise Scans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://paradisescans.com"
+    }
+  ]
+}

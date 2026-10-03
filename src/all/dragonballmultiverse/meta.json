@@ -1,0 +1,14 @@
+{
+  "pkg": "all.dragonballmultiverse",
+  "name": "Dragon Ball Multiverse",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.dragonball-multiverse.com"
+    }
+  ]
+}

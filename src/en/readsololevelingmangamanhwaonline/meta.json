@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readsololevelingmangamanhwaonline",
+  "name": "Read Solo Leveling Manga Manhwa Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww4.readsololeveling.org"
+    }
+  ]
+}

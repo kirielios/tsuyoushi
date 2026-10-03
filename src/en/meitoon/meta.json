@@ -1,0 +1,15 @@
+{
+  "pkg": "en.meitoon",
+  "name": "MeiToon",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://meitoon.org"
+    }
+  ]
+}

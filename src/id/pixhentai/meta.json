@@ -1,0 +1,15 @@
+{
+  "pkg": "id.pixhentai",
+  "name": "Pix Hentai",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "oceanwp",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://pixhentai.com"
+    }
+  ]
+}

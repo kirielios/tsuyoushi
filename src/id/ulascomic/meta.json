@@ -1,0 +1,15 @@
+{
+  "pkg": "id.ulascomic",
+  "name": "Ulas Comic",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.ulascomic01.xyz"
+    }
+  ]
+}

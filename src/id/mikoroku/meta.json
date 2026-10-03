@@ -1,0 +1,15 @@
+{
+  "pkg": "id.mikoroku",
+  "name": "MikoRoku",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.mikoroku.com"
+    }
+  ]
+}

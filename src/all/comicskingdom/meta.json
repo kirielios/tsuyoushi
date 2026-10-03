@@ -1,0 +1,15 @@
+{
+  "pkg": "all.comicskingdom",
+  "name": "ComicsKingdom",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://wp.comicskingdom.com",
+      "name": "Comics Kingdom"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "id.kumapoi",
+  "name": "KumaPoi",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://kumapoi.info"
+    }
+  ]
+}

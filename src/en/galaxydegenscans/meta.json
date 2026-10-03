@@ -1,0 +1,15 @@
+{
+  "pkg": "en.galaxydegenscans",
+  "name": "GalaxyDegenScans",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://gdscans.com"
+    }
+  ]
+}

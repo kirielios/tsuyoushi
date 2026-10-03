@@ -1,0 +1,15 @@
+{
+  "pkg": "en.lunatoons",
+  "name": "Luna Toons",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://lunatoons.org"
+    }
+  ]
+}

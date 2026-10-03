@@ -1,0 +1,10 @@
+// From upstream assets/i18n/messages_en.properties
+export const messages = {
+  en: {
+    data_saver: "Data saver",
+    data_saver_summary: "Enables smaller, more compressed images",
+    invalid_manga_id: "Not a valid comic ID",
+    show_locked_chapters: "Show chapters with pay-walled pages",
+    show_locked_chapters_summary: "Display chapters that require an account with a premium subscription",
+  },
+};

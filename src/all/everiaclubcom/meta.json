@@ -1,0 +1,14 @@
+{
+  "pkg": "all.everiaclubcom",
+  "name": "EveriaClub (unoriginal)",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.everiaclub.com"
+    }
+  ]
+}

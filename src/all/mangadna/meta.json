@@ -1,0 +1,18 @@
+{
+  "pkg": "all.mangadna",
+  "name": "MangaDNA",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangadna.com"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://mangadna.com"
+    }
+  ]
+}

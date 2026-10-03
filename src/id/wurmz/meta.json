@@ -1,0 +1,14 @@
+{
+  "pkg": "id.wurmz",
+  "name": "Wurmz",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://wurmz.net"
+    }
+  ]
+}

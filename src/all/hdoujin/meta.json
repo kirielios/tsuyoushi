@@ -1,0 +1,18 @@
+{
+  "pkg": "all.hdoujin",
+  "name": "HDoujin",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://hdoujin.org"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://hdoujin.org"
+    }
+  ]
+}

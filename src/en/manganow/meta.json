@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manganow",
+  "name": "MangaNow",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangareader",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manganow.to"
+    }
+  ]
+}

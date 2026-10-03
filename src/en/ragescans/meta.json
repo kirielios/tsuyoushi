@@ -1,0 +1,15 @@
+{
+  "pkg": "en.ragescans",
+  "name": "Rage Scans",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ragescans.com"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.yaoihub",
+  "name": "Yaoihub",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://yaoihub.org"
+    }
+  ]
+}

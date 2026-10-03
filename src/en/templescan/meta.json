@@ -1,0 +1,14 @@
+{
+  "pkg": "en.templescan",
+  "name": "Temple Scan",
+  "upstreamVersionCode": 54,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://templetoons.com"
+    }
+  ]
+}

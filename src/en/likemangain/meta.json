@@ -1,0 +1,15 @@
+{
+  "pkg": "en.likemangain",
+  "name": "MangaYY",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangayy.org"
+    }
+  ]
+}

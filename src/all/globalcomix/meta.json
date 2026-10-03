@@ -1,0 +1,18 @@
+{
+  "pkg": "all.globalcomix",
+  "name": "GlobalComix",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://globalcomix.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://globalcomix.com"
+    }
+  ]
+}

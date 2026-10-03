@@ -1,0 +1,19 @@
+{
+  "pkg": "en.madarascans",
+  "name": "Madara Scans",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://madarascans.org",
+      "mirrors": [
+        "https://madarascans.org",
+        "https://madarascans.com"
+      ]
+    }
+  ]
+}

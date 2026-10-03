@@ -1,0 +1,15 @@
+{
+  "pkg": "en.bakkin",
+  "name": "Bakkin",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "bakkin",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://bakkin.moe/reader/"
+    }
+  ]
+}

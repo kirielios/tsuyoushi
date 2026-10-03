@@ -1,0 +1,14 @@
+{
+  "pkg": "en.philiascans",
+  "name": "Philia Scans",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://philiascans.org"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.readallcomicscom",
+  "name": "ReadAllComics",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://readallcomics.com"
+    }
+  ]
+}

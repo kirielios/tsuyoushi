@@ -1,0 +1,14 @@
+{
+  "pkg": "id.voratoon",
+  "name": "VoraToon",
+  "upstreamVersionCode": 84,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v2.voratoon.com"
+    }
+  ]
+}

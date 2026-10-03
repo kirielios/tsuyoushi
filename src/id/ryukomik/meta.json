@@ -1,0 +1,14 @@
+{
+  "pkg": "id.ryukomik",
+  "name": "Ryukomik",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://ryukomik.my.id"
+    }
+  ]
+}

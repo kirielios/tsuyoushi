@@ -1,0 +1,15 @@
+{
+  "pkg": "id.manhwadesu",
+  "name": "ManhwaDesu",
+  "upstreamVersionCode": 12,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://manhwadesu.wiki"
+    }
+  ]
+}

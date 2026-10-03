@@ -1,0 +1,15 @@
+{
+  "pkg": "en.suryascans",
+  "name": "Genz Toons",
+  "upstreamVersionCode": 33,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://genztoons.org"
+    }
+  ]
+}

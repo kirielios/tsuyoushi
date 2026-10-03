@@ -1,0 +1,14 @@
+{
+  "pkg": "en.mangago",
+  "name": "Mangago",
+  "upstreamVersionCode": 40,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.mangago.me"
+    }
+  ]
+}

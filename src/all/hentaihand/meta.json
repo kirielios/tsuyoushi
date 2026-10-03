@@ -1,0 +1,15 @@
+{
+  "pkg": "all.hentaihand",
+  "name": "HentaiHand",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "hentaihand",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://hentaihand.com"
+    }
+  ]
+}

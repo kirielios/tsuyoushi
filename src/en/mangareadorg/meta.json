@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangareadorg",
+  "name": "MangaRead.org",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.mangaread.org"
+    }
+  ]
+}

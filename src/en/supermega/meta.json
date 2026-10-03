@@ -1,0 +1,14 @@
+{
+  "pkg": "en.supermega",
+  "name": "SUPER MEGA",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.supermegacomics.com"
+    }
+  ]
+}

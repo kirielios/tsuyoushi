@@ -1,0 +1,15 @@
+{
+  "pkg": "en.vortexscans",
+  "name": "Vortex Scans",
+  "upstreamVersionCode": 62,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://vortexscans.org"
+    }
+  ]
+}

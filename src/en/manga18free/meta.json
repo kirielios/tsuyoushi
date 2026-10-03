@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manga18free",
+  "name": "Manga18Free",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manga18free.com"
+    }
+  ]
+}

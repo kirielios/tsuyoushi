@@ -1,0 +1,15 @@
+{
+  "pkg": "id.aarlas",
+  "name": "Aarlas",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.arlas.online"
+    }
+  ]
+}

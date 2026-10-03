@@ -1,0 +1,15 @@
+{
+  "pkg": "en.guya",
+  "name": "Guya",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "guya",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://guya.cubari.moe"
+    }
+  ]
+}

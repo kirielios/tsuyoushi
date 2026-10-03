@@ -1,0 +1,15 @@
+{
+  "pkg": "id.crotpedia",
+  "name": "CrotPedia",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "zmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://crotpedia.net"
+    }
+  ]
+}

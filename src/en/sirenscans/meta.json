@@ -1,0 +1,14 @@
+{
+  "pkg": "en.sirenscans",
+  "name": "Siren Scans",
+  "upstreamVersionCode": 22,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://sirenscans.org"
+    }
+  ]
+}

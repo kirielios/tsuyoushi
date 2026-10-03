@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhwatop",
+  "name": "Manhwatop",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwatop.com"
+    }
+  ]
+}

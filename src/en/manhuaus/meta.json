@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhuaus",
+  "name": "ManhuaUS",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhuaus.com"
+    }
+  ]
+}

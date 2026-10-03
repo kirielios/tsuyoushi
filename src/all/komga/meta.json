@@ -1,0 +1,25 @@
+{
+  "pkg": "all.komga",
+  "name": "Komga",
+  "upstreamVersionCode": 70,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://127.0.0.1:25600",
+      "name": "Komga"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://127.0.0.1:25600",
+      "name": "Komga (2)"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://127.0.0.1:25600",
+      "name": "Komga (3)"
+    }
+  ]
+}

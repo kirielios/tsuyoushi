@@ -1,0 +1,18 @@
+{
+  "pkg": "all.mangatoon",
+  "name": "MangaToon (Limited)",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangatoon.mobi"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://mangatoon.mobi"
+    }
+  ]
+}

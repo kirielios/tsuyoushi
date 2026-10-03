@@ -1,0 +1,15 @@
+{
+  "pkg": "en.artlapsa",
+  "name": "Art Lapsa",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://artlapsa.com"
+    }
+  ]
+}

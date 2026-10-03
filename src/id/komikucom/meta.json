@@ -1,0 +1,14 @@
+{
+  "pkg": "id.komikucom",
+  "name": "Komiku.com",
+  "upstreamVersionCode": 35,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://01.komiku.asia"
+    }
+  ]
+}

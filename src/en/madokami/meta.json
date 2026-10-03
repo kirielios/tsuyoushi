@@ -1,0 +1,14 @@
+{
+  "pkg": "en.madokami",
+  "name": "Madokami",
+  "upstreamVersionCode": 16,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manga.madokami.al"
+    }
+  ]
+}

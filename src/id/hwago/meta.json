@@ -1,0 +1,15 @@
+{
+  "pkg": "id.hwago",
+  "name": "Hwago",
+  "upstreamVersionCode": 56,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "hwalumi",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://02.hwago.xyz"
+    }
+  ]
+}

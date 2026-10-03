@@ -1,0 +1,14 @@
+{
+  "pkg": "all.pornpics",
+  "name": "PornPics",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.pornpics.com"
+    }
+  ]
+}

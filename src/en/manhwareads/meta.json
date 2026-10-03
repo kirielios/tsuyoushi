@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhwareads",
+  "name": "Manhwa Reads",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwareads.com"
+    }
+  ]
+}

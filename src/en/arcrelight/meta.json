@@ -1,0 +1,15 @@
+{
+  "pkg": "en.arcrelight",
+  "name": "Arc-Relight",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangadventure",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://arc-relight.com"
+    }
+  ]
+}

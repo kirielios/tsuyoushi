@@ -1,0 +1,15 @@
+{
+  "pkg": "en.culturedworks",
+  "name": "CulturedWorks",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://culturedworks.com"
+    }
+  ]
+}

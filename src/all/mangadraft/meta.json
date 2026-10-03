@@ -1,0 +1,15 @@
+{
+  "pkg": "all.mangadraft",
+  "name": "Manga Draft",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://mangadraft.com",
+      "name": "MangaDraft"
+    }
+  ]
+}

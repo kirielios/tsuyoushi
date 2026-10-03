@@ -1,0 +1,14 @@
+{
+  "pkg": "en.myhentaicomics",
+  "name": "MyHentaiComics",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://myhentaicomics.com"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "pkg": "en.kaliscancom",
+  "name": "KaliScan",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kaliscan.com",
+      "mirrors": [
+        "https://kaliscan.com",
+        "https://kaliscan.me",
+        "https://kaliscan.io",
+        "https://mgjinx.com"
+      ]
+    }
+  ]
+}

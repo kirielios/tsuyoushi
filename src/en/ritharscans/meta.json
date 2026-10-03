@@ -1,0 +1,15 @@
+{
+  "pkg": "en.ritharscans",
+  "name": "RitharScans",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ritharscans.com"
+    }
+  ]
+}

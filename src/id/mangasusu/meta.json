@@ -1,0 +1,15 @@
+{
+  "pkg": "id.mangasusu",
+  "name": "Mangasusu",
+  "upstreamVersionCode": 5,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://mangasusuku.com"
+    }
+  ]
+}

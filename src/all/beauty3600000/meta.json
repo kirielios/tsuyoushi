@@ -1,0 +1,14 @@
+{
+  "pkg": "all.beauty3600000",
+  "name": "3600000 Beauty",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://3600000.xyz"
+    }
+  ]
+}

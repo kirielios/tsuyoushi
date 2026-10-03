@@ -1,0 +1,22 @@
+{
+  "pkg": "all.hentai3",
+  "name": "3Hentai",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://3hentai.net"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://3hentai.net"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://3hentai.net"
+    }
+  ]
+}

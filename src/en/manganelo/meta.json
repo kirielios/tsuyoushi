@@ -1,0 +1,20 @@
+{
+  "pkg": "en.manganelo",
+  "name": "Manganato",
+  "upstreamVersionCode": 7,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangabox",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.natomanga.com",
+      "mirrors": [
+        "https://www.natomanga.com",
+        "https://www.nelomanga.net",
+        "https://www.manganato.gg"
+      ]
+    }
+  ]
+}

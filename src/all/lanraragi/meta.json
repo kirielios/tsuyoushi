@@ -1,0 +1,20 @@
+{
+  "pkg": "all.lanraragi",
+  "name": "LANraragi",
+  "upstreamVersionCode": 25,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "http://127.0.0.1:3000",
+      "name": "LANraragi (1)"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "http://127.0.0.1:3000",
+      "name": "LANraragi (2)"
+    }
+  ]
+}

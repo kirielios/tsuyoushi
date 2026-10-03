@@ -1,0 +1,14 @@
+{
+  "pkg": "en.darthsdroids",
+  "name": "Darths & Droids",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.darthsanddroids.net"
+    }
+  ]
+}

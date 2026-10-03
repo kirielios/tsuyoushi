@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kenscans",
+  "name": "Ken Scans",
+  "upstreamVersionCode": 10,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kencomics.com"
+    }
+  ]
+}

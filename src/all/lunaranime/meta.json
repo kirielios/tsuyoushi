@@ -1,0 +1,22 @@
+{
+  "pkg": "all.lunaranime",
+  "name": "Lunar Manga",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://lunarx.to"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://lunarx.to"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://lunarx.to"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.orionscans",
+  "name": "Orion Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://orion-scans.com"
+    }
+  ]
+}

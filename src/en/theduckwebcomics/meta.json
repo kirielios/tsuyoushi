@@ -1,0 +1,14 @@
+{
+  "pkg": "en.theduckwebcomics",
+  "name": "The Duck Webcomics",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.theduckwebcomics.com"
+    }
+  ]
+}

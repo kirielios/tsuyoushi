@@ -1,0 +1,14 @@
+{
+  "pkg": "id.komiknesia",
+  "name": "KomikNesia",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v1.komiknesiaku.com"
+    }
+  ]
+}

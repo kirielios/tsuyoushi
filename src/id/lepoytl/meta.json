@@ -1,0 +1,15 @@
+{
+  "pkg": "id.lepoytl",
+  "name": "LepoyTL",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "zeistmanga",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.lepoytl.my.id"
+    }
+  ]
+}

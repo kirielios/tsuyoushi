@@ -1,0 +1,15 @@
+{
+  "pkg": "en.manhwahub",
+  "name": "ManhwaHub",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "manhwaz",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhwahub.net"
+    }
+  ]
+}

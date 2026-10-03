@@ -1,0 +1,18 @@
+{
+  "pkg": "all.comikey",
+  "name": "Comikey",
+  "upstreamVersionCode": 11,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://comikey.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://comikey.com"
+    }
+  ]
+}

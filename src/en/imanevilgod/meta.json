@@ -1,0 +1,14 @@
+{
+  "pkg": "en.imanevilgod",
+  "name": "I'm An Evil God",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://imanevilgod.com"
+    }
+  ]
+}

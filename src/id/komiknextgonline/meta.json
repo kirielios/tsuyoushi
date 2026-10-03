@@ -1,0 +1,14 @@
+{
+  "pkg": "id.komiknextgonline",
+  "name": "Komik Next G Online",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://komiknextgonline.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.doujinio",
+  "name": "Doujin.io - J18",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://doujin.io"
+    }
+  ]
+}

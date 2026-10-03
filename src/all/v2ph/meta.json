@@ -1,0 +1,14 @@
+{
+  "pkg": "all.v2ph",
+  "name": "V2PH",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.v2ph.com"
+    }
+  ]
+}

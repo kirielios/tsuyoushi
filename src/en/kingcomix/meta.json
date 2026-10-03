@@ -1,0 +1,14 @@
+{
+  "pkg": "en.kingcomix",
+  "name": "KingComiX",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kingcomix.com"
+    }
+  ]
+}

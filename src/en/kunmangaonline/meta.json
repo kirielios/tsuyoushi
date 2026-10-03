@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kunmangaonline",
+  "name": "Kun Manga Online",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.kunmanga.online"
+    }
+  ]
+}

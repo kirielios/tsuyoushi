@@ -1,0 +1,15 @@
+{
+  "pkg": "en.hivescans",
+  "name": "Hive Scans",
+  "upstreamVersionCode": 44,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hivetoons.org"
+    }
+  ]
+}

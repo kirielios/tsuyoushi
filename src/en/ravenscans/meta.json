@@ -1,0 +1,15 @@
+{
+  "pkg": "en.ravenscans",
+  "name": "Raven Scans",
+  "upstreamVersionCode": 5,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ravenscans.org"
+    }
+  ]
+}

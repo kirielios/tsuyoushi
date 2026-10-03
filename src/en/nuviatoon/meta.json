@@ -1,0 +1,14 @@
+{
+  "pkg": "en.nuviatoon",
+  "name": "Nuvia Toon",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://nuviatoon.com"
+    }
+  ]
+}

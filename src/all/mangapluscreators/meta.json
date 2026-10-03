@@ -1,0 +1,14 @@
+{
+  "pkg": "all.mangapluscreators",
+  "name": "MANGA Plus Creators by SHUEISHA",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangaplus-creators.jp"
+    }
+  ]
+}

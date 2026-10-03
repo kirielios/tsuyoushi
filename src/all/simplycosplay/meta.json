@@ -1,0 +1,14 @@
+{
+  "pkg": "all.simplycosplay",
+  "name": "Simply Cosplay",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.simply-cosplay.com"
+    }
+  ]
+}

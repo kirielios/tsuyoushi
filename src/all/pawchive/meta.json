@@ -1,0 +1,14 @@
+{
+  "pkg": "all.pawchive",
+  "name": "Pawchive",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://pawchive.pw"
+    }
+  ]
+}

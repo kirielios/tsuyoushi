@@ -1,0 +1,15 @@
+{
+  "pkg": "id.mangacan",
+  "name": "Manga Can",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://mangacanblog.com"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.yakshacomics",
+  "name": "YakshaComics",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://yakshacomics.com"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangataro",
+  "name": "MangaTaro",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangataro",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangataro.org"
+    }
+  ]
+}

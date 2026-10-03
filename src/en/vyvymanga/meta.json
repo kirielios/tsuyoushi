@@ -1,0 +1,14 @@
+{
+  "pkg": "en.vyvymanga",
+  "name": "VyvyManga",
+  "upstreamVersionCode": 43,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangavyvy.net"
+    }
+  ]
+}

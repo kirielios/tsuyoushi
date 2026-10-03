@@ -1,0 +1,14 @@
+{
+  "pkg": "en.fairyscans",
+  "name": "Fairy Scans",
+  "upstreamVersionCode": 34,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://fairyscans.org"
+    }
+  ]
+}

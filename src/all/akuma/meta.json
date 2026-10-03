@@ -1,0 +1,22 @@
+{
+  "pkg": "all.akuma",
+  "name": "Akuma",
+  "upstreamVersionCode": 10,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://akuma.moe"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://akuma.moe"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://akuma.moe"
+    }
+  ]
+}

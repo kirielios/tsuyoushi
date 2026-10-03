@@ -1,0 +1,15 @@
+{
+  "pkg": "all.stashapp",
+  "name": "StashApp",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "http://localhost:9999",
+      "customUrl": true
+    }
+  ]
+}

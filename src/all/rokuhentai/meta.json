@@ -1,0 +1,15 @@
+{
+  "pkg": "all.rokuhentai",
+  "name": "RokuHentai",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://rokuhentai.com",
+      "name": "Roku Hentai"
+    }
+  ]
+}

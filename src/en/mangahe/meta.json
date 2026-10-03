@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangahe",
+  "name": "MangaHe",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangahe.com"
+    }
+  ]
+}

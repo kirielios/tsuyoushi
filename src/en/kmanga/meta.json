@@ -1,0 +1,14 @@
+{
+  "pkg": "en.kmanga",
+  "name": "K Manga",
+  "upstreamVersionCode": 7,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kmanga.kodansha.com"
+    }
+  ]
+}

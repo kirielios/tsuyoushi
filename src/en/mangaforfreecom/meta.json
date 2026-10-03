@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangaforfreecom",
+  "name": "Mangaforfree.com",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangaforfree.com"
+    }
+  ]
+}

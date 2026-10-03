@@ -1,0 +1,14 @@
+{
+  "pkg": "en.mgreadio",
+  "name": "Mgread.io",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mgread.io"
+    }
+  ]
+}

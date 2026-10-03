@@ -1,0 +1,15 @@
+{
+  "pkg": "en.mangahereonl",
+  "name": "MangaHere.onl",
+  "upstreamVersionCode": 0,
+  "port": 2,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangahub",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangahere.onl"
+    }
+  ]
+}

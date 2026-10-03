@@ -1,0 +1,15 @@
+{
+  "pkg": "en.readonepiecemangaonline",
+  "name": "Read One Piece Manga Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangacatalog",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://ww13.readonepiece.com"
+    }
+  ]
+}

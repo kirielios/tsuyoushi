@@ -1,0 +1,15 @@
+{
+  "pkg": "en.galaxymanga",
+  "name": "Galaxy Manga",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://galaxymanga.io"
+    }
+  ]
+}

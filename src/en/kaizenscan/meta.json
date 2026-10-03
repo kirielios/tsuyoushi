@@ -1,0 +1,15 @@
+{
+  "pkg": "en.kaizenscan",
+  "name": "Kaizen Scan",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kaizenscan.com"
+    }
+  ]
+}

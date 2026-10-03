@@ -1,0 +1,14 @@
+{
+  "pkg": "en.thepropertyofhate",
+  "name": "The Property of Hate",
+  "upstreamVersionCode": 6,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://jolleycomics.com"
+    }
+  ]
+}

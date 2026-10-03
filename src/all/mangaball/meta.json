@@ -1,0 +1,18 @@
+{
+  "pkg": "all.mangaball",
+  "name": "Manga Ball",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangaball.com"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://mangaball.com"
+    }
+  ]
+}

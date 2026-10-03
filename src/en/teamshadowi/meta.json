@@ -1,0 +1,14 @@
+{
+  "pkg": "en.teamshadowi",
+  "name": "Team Shadowi",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.team-shadowi.com"
+    }
+  ]
+}

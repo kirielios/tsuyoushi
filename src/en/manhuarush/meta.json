@@ -1,0 +1,14 @@
+{
+  "pkg": "en.manhuarush",
+  "name": "Manhua Rush",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://manhuarush.vercel.app"
+    }
+  ]
+}

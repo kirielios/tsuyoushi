@@ -1,0 +1,15 @@
+{
+  "pkg": "all.kemono",
+  "name": "Kemono",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "kemono",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://kemono.cr"
+    }
+  ]
+}

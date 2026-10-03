@@ -1,0 +1,15 @@
+{
+  "pkg": "en.theblank",
+  "name": "The Blank",
+  "upstreamVersionCode": 54,
+  "port": 2,
+  "libVersion": "1.4",
+  "contentWarning": "NSFW",
+  "theme": "pam",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://theblank.net"
+    }
+  ]
+}

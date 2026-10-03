@@ -1,0 +1,14 @@
+{
+  "pkg": "en.onepunchmanonline",
+  "name": "One Punch Man Online",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://1punchman.com"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "all.leagueoflegends",
+  "name": "League of Legends",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://universe.leagueoflegends.com/en_us/comic/"
+    }
+  ]
+}

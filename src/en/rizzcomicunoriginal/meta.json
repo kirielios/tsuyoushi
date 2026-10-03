@@ -1,0 +1,15 @@
+{
+  "pkg": "en.rizzcomicunoriginal",
+  "name": "Rizz Comic (unoriginal)",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://rizzcomic.com"
+    }
+  ]
+}

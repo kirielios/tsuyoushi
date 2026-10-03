@@ -1,0 +1,14 @@
+{
+  "pkg": "all.taddyink",
+  "name": "Taddy INK (Webtoons)",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://taddy.org"
+    }
+  ]
+}

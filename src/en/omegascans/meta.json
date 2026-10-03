@@ -1,0 +1,15 @@
+{
+  "pkg": "en.omegascans",
+  "name": "Omega Scans",
+  "upstreamVersionCode": 19,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "heancms",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://omegascans.org"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "en.drakescans",
+  "name": "Drake Scans",
+  "upstreamVersionCode": 48,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "vinetheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://drakecomic.net"
+    }
+  ]
+}

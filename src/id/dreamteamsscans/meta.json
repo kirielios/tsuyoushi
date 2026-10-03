@@ -1,0 +1,15 @@
+{
+  "pkg": "id.dreamteamsscans",
+  "name": "DreamTeams Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "loneseal",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://dreamteams.space"
+    }
+  ]
+}

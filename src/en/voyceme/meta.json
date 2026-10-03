@@ -1,0 +1,15 @@
+{
+  "pkg": "en.voyceme",
+  "name": "Voyce.Me",
+  "upstreamVersionCode": 7,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://www.voyce.me",
+      "name": "VoyceMe"
+    }
+  ]
+}

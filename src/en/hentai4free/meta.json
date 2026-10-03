@@ -1,0 +1,15 @@
+{
+  "pkg": "en.hentai4free",
+  "name": "Hentai4Free",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentai4free.net"
+    }
+  ]
+}

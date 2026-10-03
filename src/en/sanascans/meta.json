@@ -1,0 +1,15 @@
+{
+  "pkg": "en.sanascans",
+  "name": "Sana Scans",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "iken",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://sanascans.com"
+    }
+  ]
+}

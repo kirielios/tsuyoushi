@@ -1,0 +1,16 @@
+{
+  "pkg": "all.yellownote",
+  "name": "YellowNote",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://en.xchina.co",
+      "customUrl": true,
+      "name": "小黄书"
+    }
+  ]
+}

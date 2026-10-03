@@ -1,0 +1,15 @@
+{
+  "pkg": "id.manhwaindo",
+  "name": "Manhwa Indo",
+  "upstreamVersionCode": 11,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://www.manhwaindo.my"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "en.yorai",
+  "name": "Yorai",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.4",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://yorai.io"
+    }
+  ]
+}

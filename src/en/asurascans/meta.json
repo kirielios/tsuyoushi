@@ -1,0 +1,14 @@
+{
+  "pkg": "en.asurascans",
+  "name": "Asura Scans",
+  "upstreamVersionCode": 69,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://asurascans.com"
+    }
+  ]
+}

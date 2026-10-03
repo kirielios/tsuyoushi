@@ -1,0 +1,15 @@
+{
+  "pkg": "en.asmotoon",
+  "name": "Asmodeus Scans",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "keyoapp",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://asmotoon.com"
+    }
+  ]
+}

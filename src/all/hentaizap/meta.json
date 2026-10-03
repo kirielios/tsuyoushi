@@ -1,0 +1,19 @@
+{
+  "pkg": "all.hentaizap",
+  "name": "HentaiZap",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "galleryadults",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://hentaizap.com"
+    },
+    {
+      "lang": "all",
+      "baseUrl": "https://hentaizap.com"
+    }
+  ]
+}

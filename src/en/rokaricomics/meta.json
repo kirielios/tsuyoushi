@@ -1,0 +1,15 @@
+{
+  "pkg": "en.rokaricomics",
+  "name": "RokariComics",
+  "upstreamVersionCode": 4,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "SAFE",
+  "theme": "mangathemesia",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://rokaricomics.com"
+    }
+  ]
+}

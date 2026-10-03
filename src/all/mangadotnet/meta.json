@@ -1,0 +1,18 @@
+{
+  "pkg": "all.mangadotnet",
+  "name": "MangaDot",
+  "upstreamVersionCode": 24,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "MIXED",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://mangadot.net"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://mangadot.net"
+    }
+  ]
+}

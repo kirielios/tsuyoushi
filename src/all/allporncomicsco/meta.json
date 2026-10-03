@@ -1,0 +1,15 @@
+{
+  "pkg": "all.allporncomicsco",
+  "name": "AllPornComics.co",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "1.6",
+  "contentWarning": "NSFW",
+  "theme": "madara",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://allporncomics.co"
+    }
+  ]
+}
