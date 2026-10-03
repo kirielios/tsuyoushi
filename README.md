@@ -6,7 +6,11 @@
 |-------|---------|
 | [![Publish](https://github.com/kirielios/tsuyoushi/actions/workflows/publish.yml/badge.svg)](https://github.com/kirielios/tsuyoushi/actions/workflows/publish.yml) | [Open an issue](https://github.com/kirielios/tsuyoushi/issues/new) |
 
-[Keiyoushi](https://github.com/keiyoushi/extensions-source) manga extensions ported to TypeScript, English and Indonesian, so the manga reader can use them without Suwayomi-Server.
+[Keiyoushi](https://github.com/keiyoushi/extensions-source) manga extensions (English and Indonesian) ported from Kotlin to TypeScript, for **web-based readers**.
+
+Keiyoushi's extensions are Android APKs: outside Mihon they only run inside Suwayomi-Server, a JVM app you have to install and keep running. Tsuyoushi builds each extension into a small JavaScript bundle instead, so any JavaScript reader (Node.js, Next.js, Deno, Bun) can load it straight from a URL, with no Kotlin, JVM or Suwayomi-Server.
+
+> Extensions still need a JavaScript **server-side** runtime, not a browser tab: manga sites send no CORS headers, so a page cannot fetch them directly.
 
 ## Usage
 
@@ -53,15 +57,19 @@ npm run check -- en.mangapill         # popular, latest, search, details, chapte
 
 Bump `port` in `meta.json` when you change a port without an upstream `versionCode` change, so installed copies update.
 
-### Trying it in the reader
+### Testing a change before you push
+
+Serve your local build and paste its URL into your reader instead of the published one:
 
 ```sh
 npm run build && npm run serve        # http://localhost:4600/index.json
 ```
 
-### Bundle contract
+### Using it in your own reader
 
-Each `dist/<pkg>/index.js` is an IIFE that defines `__tsuyoushi.create(host, meta)`, returning a `KeiSource`. `host` (see `sdk/host.ts`) is everything the extension gets from the app: `fetch`, cheerio's `load`, a user agent and preferences.
+`index.json` lists every source (`"format": "mangareader-kei/1"`) with its bundle and icon paths. Each `dist/<pkg>/index.js` is an IIFE that defines `__tsuyoushi.create(host, meta)`, returning a `KeiSource` with Mihon's methods (`getPopularManga`, `getLatestUpdates`, `getSearchManga`, `fetchMangaUpdate` for details and chapters, `getPageList`, `getImage`, …).
+
+`host` (see `sdk/host.ts`) is everything an extension gets from your reader: `fetch` (redirects, timeout, cookies), cheerio's `load`, a user agent, preferences and an optional image API for descrambling. `tools/node-host.ts` is a complete Node.js implementation you can copy; `tools/check.ts` shows how to load a bundle and call it.
 
 ## License
 
