@@ -34,43 +34,53 @@ Any other reader that speaks the format works too (see [Using it in your own rea
 These third-party [Paperback](https://paperback.moe) repositories also run in NeetShelf (Paperback 0.8 and 0.9
 `versioning.json` format). They are not maintained by Tsuyoushi: report problems to their own maintainers.
 
-| Repository | Sources |
-|---|---|
-| inkdex general (0.9) | MangaDex, MangaPlus, Webtoon, WeebCentral and more |
-| inkdex madara (0.9) | Madara-based sites |
-| inkdex mangastream (0.9) | MangaStream-based sites |
-| inkdex mangabox (0.9) | MangaKakalot, MangaNato and more |
-| Community (0.8) | MangaDex, MangaPlus, BatoTo and more |
-| Generic: madara (0.8) | Madara-based sites |
-| Generic: mangastream (0.8) | MangaStream-based sites |
-| Generic: dev (0.8) | Assorted sites |
+**inkdex general (0.9)**: MangaDex, MangaPlus, Webtoon, WeebCentral and more
 
 ```
 https://inkdex.github.io/general-extensions/0.9/stable/versioning.json
 ```
+
+**inkdex madara (0.9)**: Madara-based sites
+
 ```
 https://inkdex.github.io/madara-extensions/0.9/stable/versioning.json
 ```
+
+**inkdex mangastream (0.9)**: MangaStream-based sites
+
 ```
 https://inkdex.github.io/mangastream-extensions/0.9/stable/versioning.json
 ```
+
+**inkdex mangabox (0.9)**: MangaKakalot, MangaNato and more
+
 ```
 https://inkdex.github.io/mangabox-extensions/0.9/stable/versioning.json
 ```
+
+**Community (0.8)**: MangaDex, MangaPlus, BatoTo and more
+
 ```
 https://thenetsky.github.io/community-extensions/0.8/versioning.json
 ```
+
+**Generic: madara (0.8)**: Madara-based sites
+
 ```
 https://thenetsky.github.io/extensions-generic-0.8/madara/versioning.json
 ```
+
+**Generic: mangastream (0.8)**: MangaStream-based sites
+
 ```
 https://thenetsky.github.io/extensions-generic-0.8/mangastream/versioning.json
 ```
+
+**Generic: dev (0.8)**: Assorted sites
+
 ```
 https://thenetsky.github.io/extensions-generic-0.8/dev/versioning.json
 ```
-
-Every push to `main` rebuilds and republishes it (`.github/workflows/publish.yml`).
 
 ## Requests
 
