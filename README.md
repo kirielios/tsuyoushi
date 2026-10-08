@@ -10,15 +10,64 @@
 
 Keiyoushi's extensions are Android APKs: outside Mihon they only run inside Suwayomi-Server, a JVM app you have to install and keep running. Tsuyoushi builds each extension into a small JavaScript bundle instead, so any JavaScript reader (Node.js, Next.js, Deno, Bun) can load it straight from a URL, with no Kotlin, JVM or Suwayomi-Server.
 
-> Extensions still need a JavaScript **server-side** runtime, not a browser tab: manga sites send no CORS headers, so a page cannot fetch them directly.
+> Manga sites send no CORS headers, so a plain browser tab cannot fetch them: extensions run either on a JavaScript
+> server, or in the browser with a helper extension that makes the requests for them (like the NeetShelf Helper).
 
 ## Usage
 
-* In the reader, open **Settings → Browse → Extension stores**
+The reader built for Tsuyoushi is **[NeetShelf](https://neetshelf.app)**, a manga reader that runs in the browser
+(desktop, tablet and phone).
+
+* Sign in at [neetshelf.app](https://neetshelf.app) and open **Settings → Extension repos**
 * Copy & paste the following URL:
 
 ```
 https://kirielios.github.io/tsuyoushi/index.json
+```
+
+* Install sources under **Browse → Extensions**
+
+Any other reader that speaks the format works too (see [Using it in your own reader](#using-it-in-your-own-reader)).
+
+### Other repositories that work in NeetShelf
+
+These third-party [Paperback](https://paperback.moe) repositories also run in NeetShelf (Paperback 0.8 and 0.9
+`versioning.json` format). They are not maintained by Tsuyoushi: report problems to their own maintainers.
+
+| Repository | Sources |
+|---|---|
+| inkdex general (0.9) | MangaDex, MangaPlus, Webtoon, WeebCentral and more |
+| inkdex madara (0.9) | Madara-based sites |
+| inkdex mangastream (0.9) | MangaStream-based sites |
+| inkdex mangabox (0.9) | MangaKakalot, MangaNato and more |
+| Community (0.8) | MangaDex, MangaPlus, BatoTo and more |
+| Generic: madara (0.8) | Madara-based sites |
+| Generic: mangastream (0.8) | MangaStream-based sites |
+| Generic: dev (0.8) | Assorted sites |
+
+```
+https://inkdex.github.io/general-extensions/0.9/stable/versioning.json
+```
+```
+https://inkdex.github.io/madara-extensions/0.9/stable/versioning.json
+```
+```
+https://inkdex.github.io/mangastream-extensions/0.9/stable/versioning.json
+```
+```
+https://inkdex.github.io/mangabox-extensions/0.9/stable/versioning.json
+```
+```
+https://thenetsky.github.io/community-extensions/0.8/versioning.json
+```
+```
+https://thenetsky.github.io/extensions-generic-0.8/madara/versioning.json
+```
+```
+https://thenetsky.github.io/extensions-generic-0.8/mangastream/versioning.json
+```
+```
+https://thenetsky.github.io/extensions-generic-0.8/dev/versioning.json
 ```
 
 Every push to `main` rebuilds and republishes it (`.github/workflows/publish.yml`).
