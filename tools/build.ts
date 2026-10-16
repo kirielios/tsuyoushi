@@ -5,7 +5,7 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync,
 
 export const FORMAT = "mangareader-kei/1";
 
-type Meta = { pkg: string; name: string; upstreamVersionCode: number; port: number; contentWarning: string; theme?: string; sources: { lang: string; baseUrl: string; name?: string; mirrors?: string[]; customUrl?: boolean }[] };
+type Meta = { pkg: string; name: string; kind?: "anime"; upstreamVersionCode: number; port: number; contentWarning: string; theme?: string; sources: { lang: string; baseUrl: string; name?: string; mirrors?: string[]; customUrl?: boolean }[] };
 
 // --only a.b,c.d rebuilds just those packages and merges them into the existing index (parallel porting)
 const argv = process.argv.slice(2);
@@ -62,6 +62,7 @@ for (const lang of readdirSync("src")) {
         upstreamVersionCode: meta.upstreamVersionCode,
         contentWarning: meta.contentWarning,
         theme: meta.theme,
+        kind: meta.kind,
         icon: `${meta.pkg}/icon.png`,
         bundle: `${meta.pkg}/index.js`,
       });

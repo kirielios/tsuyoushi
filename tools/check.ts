@@ -1,9 +1,11 @@
 // Smoke-test built extensions against their live sites: popular, latest, search, details + chapters, pages, first image.
+// Anime extensions (kind "anime"): details + episodes, the newest episode's videos, and the first video's first bytes.
 //   npm run build && npm run check -- en.mangapill          one extension, verbose
 //   npm run check -- --all --parallel 8                     everything in dist/, one line each + .upstream/check.json
 import { readFileSync, writeFileSync } from "node:fs";
 import { nodeHost } from "./node-host.ts";
 import type { KeiSource } from "../sdk/source.ts";
+import type { AnimeHttpSource } from "../sdk/anime.ts";
 
 type Entry = { id: string; pkg: string; name: string; lang: string; baseUrl: string };
 type Step = { step: string; ok: boolean; ms: number; note?: string };
@@ -22,7 +24,8 @@ async function checkOne(entry: Entry): Promise<Result> {
   const r: Result = { id: entry.id, name: entry.name, baseUrl: entry.baseUrl, steps: [], info: {} };
   const code = readFileSync(`dist/${entry.pkg}/index.js`, "utf8");
   const mod = new Function(`${code}\nreturn __tsuyoushi;`)() as { create(h: unknown, m: unknown): KeiSource };
-  const src = mod.create(nodeHost(), entry);
+  const host = nodeHost();
+  const src = mod.create(host, entry);
   const step = async <T>(label: string, run: () => Promise<T>, ok: (v: T) => string | true): Promise<T | undefined> => {
     const t0 = performance.now();
     try {
@@ -48,6 +51,18 @@ async function checkOne(entry: Entry): Promise<Result> {
   if (!update?.chapters.length) return r;
   const dated = update.chapters.filter((c) => c.date_upload > 0).length;
   Object.assign(r.info, { status: update.manga.status, chapters: update.chapters.length, dated, genres: (update.manga.genre ?? "").slice(0, 50) });
+  if ((src as unknown as Partial<AnimeHttpSource>).kind === "anime") {
+    const c = update.chapters[0];
+    const anime = src as unknown as AnimeHttpSource;
+    const videos = await step("videos", () => anime.getVideos({ url: c.url, name: c.name, date_upload: c.date_upload, episode_number: c.chapter_number, memo: c.memo }), (v) => (v.length ? true : "no videos"));
+    if (!videos?.length) return r;
+    r.info.videos = videos.map((v) => v.title).join(" | ").slice(0, 120);
+    await step("video bytes", async () => {
+      const res = await host.fetch(videos[0].url, { method: "GET", headers: { ...videos[0].headers, Range: "bytes=0-1023" } });
+      return { status: res.status, type: res.headers["content-type"] ?? "" };
+    }, (x) => (x.status === 200 || x.status === 206 ? true : `HTTP ${x.status} ${x.type}`));
+    return r;
+  }
   const pages = await step("pages", () => src.getPageList(update.chapters.find((c) => !c.name.includes("🔒")) ?? update.chapters[0]), (p) => (p.length ? true : "no pages"));
   const page = pages?.[0];
   if (!page) return r;

@@ -17,3 +17,4 @@ export * from "./cookies.ts";
 export * from "./protobuf.ts";
 export * from "./zip.ts";
 export * from "./image.ts";
+export * from "./anime.ts";

@@ -1,0 +1,15 @@
+{
+  "pkg": "id.kuronime",
+  "name": "Kuronime",
+  "kind": "anime",
+  "upstreamVersionCode": 14,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://kuronime.sbs"
+    }
+  ]
+}

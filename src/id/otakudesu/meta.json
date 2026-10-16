@@ -1,0 +1,15 @@
+{
+  "pkg": "id.otakudesu",
+  "name": "OtakuDesu",
+  "kind": "anime",
+  "upstreamVersionCode": 45,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://otakudesu.blog"
+    }
+  ]
+}

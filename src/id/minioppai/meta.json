@@ -1,0 +1,16 @@
+{
+  "pkg": "id.minioppai",
+  "name": "MiniOppai",
+  "kind": "anime",
+  "upstreamVersionCode": 12,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "theme": "animestream",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://minioppai.org"
+    }
+  ]
+}

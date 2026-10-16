@@ -1,0 +1,15 @@
+{
+  "pkg": "id.nimegami",
+  "name": "NimeGami",
+  "kind": "anime",
+  "upstreamVersionCode": 8,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://nimegami.id"
+    }
+  ]
+}

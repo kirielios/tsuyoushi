@@ -6,7 +6,9 @@
 |-------|---------|
 | [![Publish](https://github.com/kirielios/tsuyoushi/actions/workflows/publish.yml/badge.svg)](https://github.com/kirielios/tsuyoushi/actions/workflows/publish.yml) | [Open an issue](https://github.com/kirielios/tsuyoushi/issues/new) |
 
-[Keiyoushi](https://github.com/keiyoushi/extensions-source) manga extensions (English and Indonesian) ported from Kotlin to TypeScript, for **web-based readers**.
+[Keiyoushi](https://github.com/keiyoushi/extensions-source) manga extensions (English and Indonesian) and [Aniyomi](https://github.com/yuzono/anime-extensions) anime extensions (Indonesian) ported from Kotlin to TypeScript, for **web-based readers and players**.
+
+Anime extensions are marked `"kind": "anime"` in `index.json`. They speak Aniyomi's AnimeHttpSource contract (`sdk/anime.ts`): the host asks `getVideos(episode)` and gets each video's URL with the headers its host needs (Referer, Origin), which the player must send with every request of that video.
 
 Keiyoushi's extensions are Android APKs: outside Mihon they only run inside Suwayomi-Server, a JVM app you have to install and keep running. Tsuyoushi builds each extension into a small JavaScript bundle instead, so any JavaScript reader (Node.js, Next.js, Deno, Bun) can load it straight from a URL, with no Kotlin, JVM or Suwayomi-Server.
 

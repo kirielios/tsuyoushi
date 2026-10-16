@@ -1,0 +1,15 @@
+{
+  "pkg": "id.samehadaku",
+  "name": "Samehadaku",
+  "kind": "anime",
+  "upstreamVersionCode": 11,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v2.samehadaku.how"
+    }
+  ]
+}
