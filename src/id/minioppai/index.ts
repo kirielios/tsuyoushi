@@ -15,15 +15,8 @@ export default class MiniOppai extends AnimeStream {
 
   protected override dateFormatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", new Locale("id"));
 
-  // ============================== Popular ===============================
-  protected override popularAnimeRequest(page: number) {
-    return GET(`${this.animeListUrl}/page/${page}/?order=popular`, this.headers);
-  }
-
-  // =============================== Latest ===============================
-  protected override latestUpdatesAnimeRequest(page: number) {
-    return GET(`${this.animeListUrl}/page/${page}/?order=update`, this.headers);
-  }
+  // Popular and latest: AnimeStream's own ?page=N. The site ignores /anime/page/N/ (upstream's path) and answers page 1
+  // for every N, so paging never moved on (2026-10-17).
 
   // ============================== Episodes ==============================
   protected override episodeFromElement(element: Element): SEpisode {
@@ -63,7 +56,7 @@ export default class MiniOppai extends AnimeStream {
     if (query) return GET(`${this.baseUrl}/page/${page}/?s=${encodeURIComponent(query)}`, this.headers);
     const params = getSearchParameters(filters);
     const multi = params.multi.filter((s) => s.trim()).join("&");
-    return GET(`${this.animeListUrl}/page/${page}/?order=${params.order}${multi ? `&${multi}` : ""}`, this.headers);
+    return GET(`${this.animeListUrl}/?page=${page}&order=${params.order}${multi ? `&${multi}` : ""}`, this.headers);
   }
 
   // ============================== Filters ===============================

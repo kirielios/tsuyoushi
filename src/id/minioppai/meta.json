@@ -3,7 +3,7 @@
   "name": "MiniOppai",
   "kind": "anime",
   "upstreamVersionCode": 12,
-  "port": 1,
+  "port": 2,
   "libVersion": "16",
   "contentWarning": "NSFW",
   "theme": "animestream",
