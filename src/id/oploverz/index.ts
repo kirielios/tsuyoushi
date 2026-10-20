@@ -16,6 +16,7 @@ import {
 } from "../../../sdk/index.ts";
 import { BloggerExtractor } from "../../../libs/bloggerextractor/index.ts";
 import { DailymotionExtractor } from "../../../libs/dailymotionextractor/index.ts";
+import { PixelDrainExtractor } from "../../../libs/pixeldrainextractor/index.ts";
 import { PlaylistUtils } from "../../../libs/playlistutils/index.ts";
 import { autoUnpacker } from "../../../libs/unpacker/index.ts";
 import {
@@ -36,7 +37,8 @@ import { FILTER_LIST, getGenreParam } from "./filters.ts";
 const API_URL = "https://backapi.oploverz.ac";
 const ANIME_PAGE_SIZE = 20;
 const EPISODE_PAGE_SIZE = 2000;
-const XFS_SOURCE_REGEX = /file\s*:\s*["']([^"']+)["']/;
+// upbolt.to /dl: jwplayer("vplayer").setup({ sources: [{file:"https://edgeNN.upbolt.to/hls2/.../master.m3u8?t=..."}], ... })
+const XFS_SOURCE_REGEX = /sources\s*:\s*\[\s*\{\s*file\s*:\s*["']([^"']+)["']/;
 
 const PREF_QUALITY_KEY = "preferred_quality";
 const PREF_QUALITY_TITLE = "Preferred quality";
@@ -111,8 +113,15 @@ export default class Oploverz extends AnimeHttpSource {
     return [new Hoster(`${API_URL}/api/series/${slug}/episodes/${number}`, this.name)];
   }
 
-  protected override videoListParse(response: Response): Promise<Video[]> {
-    return parallelCatchingFlatMap(response.parseAs<EpisodeDetailResponseDto>().data.streamUrl ?? [], (it) => this.getVideosFromStream(it));
+  protected override async videoListParse(response: Response): Promise<Video[]> {
+    const { streamUrl, downloadUrl } = response.parseAs<EpisodeDetailResponseDto>().data;
+    const videos = await parallelCatchingFlatMap(streamUrl ?? [], (it) => this.getVideosFromStream(it));
+    // Not upstream: the only download host with a direct file (the others are acefile/vikingfile/fileq/akirabox pages).
+    for (const format of downloadUrl ?? [])
+      for (const res of format.resolutions ?? [])
+        for (const link of res.download_links ?? [])
+          if (link.url?.includes("pixeldra")) videos.push(...new PixelDrainExtractor().videosFromUrl(link.url, `${res.quality.trim()} ${format.format} `));
+    return videos;
   }
 
   override sortVideos(videos: Video[]): Video[] {
@@ -125,8 +134,11 @@ export default class Oploverz extends AnimeHttpSource {
     if (url.includes("blogger.com") || url.includes("video.g?token=")) return new BloggerExtractor(this.client).videosFromUrl(url, this.videoHeaders, prefix);
     if (url.includes("dailymotion")) return new DailymotionExtractor(this.client, this.headers).videosFromUrl(url, `${prefix} Dailymotion - `);
     if (url.includes("filedon.co")) return this.getFiledonVideo(url, prefix);
-    // ponytail: UniversalExtractor (a WebView that sniffs the player's requests) is not ported; hosts that are not
-    // XFileSharing-style give no videos.
+    // ponytail: UniversalExtractor (a WebView that sniffs the player's requests) is not ported. abyssplayer's media
+    // decodes statically (AES-CTR, key md5("user_id:slug:md5_id")) to a plain URL on *.sssrr.org, but the file's first
+    // 64 KiB are AES-CTR encrypted too (its service worker decrypts them), so no URL-only player can play it;
+    // oplo2.4meplayer.pro (old episodes) is down. Both are skipped.
+    if (url.includes("abyssplayer") || url.includes("4meplayer")) return [];
     return this.getXFileSharingVideos(url, prefix);
   }
 

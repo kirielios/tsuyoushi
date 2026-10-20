@@ -51,6 +51,7 @@ export function episodeToSEpisode(data: EpisodeDto, slug: string): SEpisode {
 }
 
 export type StreamDto = { source: string; url: string };
-export type EpisodeDetailResponseDto = { data: { streamUrl?: StreamDto[] | null } };
+export type DownloadDto = { format: string; resolutions?: { quality: string; download_links?: { host: string; url?: string | null }[] }[] };
+export type EpisodeDetailResponseDto = { data: { streamUrl?: StreamDto[] | null; downloadUrl?: DownloadDto[] | null } };
 
 export type FiledonPageDto = { props: { url: string } };
