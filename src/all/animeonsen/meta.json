@@ -1,0 +1,15 @@
+{
+  "pkg": "all.animeonsen",
+  "name": "AnimeOnsen",
+  "kind": "anime",
+  "upstreamVersionCode": 10,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.animeonsen.xyz"
+    }
+  ]
+}

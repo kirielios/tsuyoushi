@@ -1,0 +1,15 @@
+{
+  "pkg": "all.rouvideo",
+  "name": "RouVideo",
+  "kind": "anime",
+  "upstreamVersionCode": 15,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    { "lang": "all", "baseUrl": "https://rou.video", "name": "肉視頻" },
+    { "lang": "zh", "baseUrl": "https://rou.video", "name": "肉視頻" },
+    { "lang": "en", "baseUrl": "https://rou.video", "name": "肉視頻" },
+    { "lang": "vi", "baseUrl": "https://rou.video", "name": "肉視頻" }
+  ]
+}

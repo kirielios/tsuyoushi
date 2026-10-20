@@ -1,0 +1,14 @@
+{
+  "pkg": "all.supjav",
+  "name": "SupJav",
+  "kind": "anime",
+  "upstreamVersionCode": 31,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    { "lang": "en", "baseUrl": "https://supjav.com" },
+    { "lang": "ja", "baseUrl": "https://supjav.com" },
+    { "lang": "zh", "baseUrl": "https://supjav.com" }
+  ]
+}

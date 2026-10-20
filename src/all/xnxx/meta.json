@@ -1,0 +1,15 @@
+{
+  "pkg": "all.xnxx",
+  "name": "Xnxx",
+  "kind": "anime",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.xnxx.com"
+    }
+  ]
+}

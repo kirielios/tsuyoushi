@@ -1,0 +1,15 @@
+{
+  "pkg": "all.anizone",
+  "name": "AniZone",
+  "kind": "anime",
+  "upstreamVersionCode": 15,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://anizone.to"
+    }
+  ]
+}

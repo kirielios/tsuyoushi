@@ -1,0 +1,16 @@
+{
+  "pkg": "all.animexin",
+  "name": "AnimeXin",
+  "kind": "anime",
+  "upstreamVersionCode": 32,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "theme": "animestream",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://animexin.dev"
+    }
+  ]
+}

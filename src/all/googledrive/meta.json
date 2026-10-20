@@ -1,0 +1,16 @@
+{
+  "pkg": "all.googledrive",
+  "name": "Google Drive",
+  "kind": "anime",
+  "upstreamVersionCode": 18,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://drive.google.com"
+    }
+  ],
+  "broken": "Drive API needs a signed-in Google session, which a web reader does not have"
+}

@@ -1,0 +1,15 @@
+{
+  "pkg": "all.movy",
+  "name": "Movy",
+  "kind": "anime",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.movy.sx"
+    }
+  ]
+}

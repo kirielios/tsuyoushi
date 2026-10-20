@@ -1,0 +1,15 @@
+{
+  "pkg": "all.googledriveindex",
+  "name": "GoogleDriveIndex",
+  "kind": "anime",
+  "upstreamVersionCode": 7,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://example.workers.dev/0:"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pkg": "all.jable",
+  "name": "Jable",
+  "kind": "anime",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    { "lang": "zh", "baseUrl": "https://jable.tv" },
+    { "lang": "en", "baseUrl": "https://jable.tv" },
+    { "lang": "ja", "baseUrl": "https://jable.tv" }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "pkg": "all.myreadingmangaanime",
+  "name": "MyReadingManga (Video)",
+  "kind": "anime",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "ar",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "id",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "bg",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "zh-hk",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "zh",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "zh-tw",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "cs",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "da",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "fil",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "fi",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "nl",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "fr",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "de",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "el",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "he",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "hi",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "hu",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "it",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "ja",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "ko",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "ms",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "no",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "pl",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "pt-BR",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "ro",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "ru",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "es",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "sv",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "th",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "tr",
+      "baseUrl": "https://myreadingmanga.info"
+    },
+    {
+      "lang": "vi",
+      "baseUrl": "https://myreadingmanga.info"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pkg": "id.oploverz",
+  "name": "Oploverz",
+  "kind": "anime",
+  "upstreamVersionCode": 29,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://oploverz.site"
+    }
+  ],
+  "broken": "streams moved to upbolt.to (Cloudflare challenge) and abyssplayer (needs a WebView); no playable videos"
+}

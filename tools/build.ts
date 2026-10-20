@@ -5,7 +5,7 @@ import { copyFileSync, cpSync, existsSync, mkdirSync, readdirSync, readFileSync,
 
 export const FORMAT = "mangareader-kei/1";
 
-type Meta = { pkg: string; name: string; kind?: "anime"; upstreamVersionCode: number; port: number; contentWarning: string; theme?: string; sources: { lang: string; baseUrl: string; name?: string; mirrors?: string[]; customUrl?: boolean }[] };
+type Meta = { pkg: string; name: string; kind?: "anime"; broken?: string; upstreamVersionCode: number; port: number; contentWarning: string; theme?: string; sources: { lang: string; baseUrl: string; name?: string; mirrors?: string[]; customUrl?: boolean }[] };
 
 // --only a.b,c.d rebuilds just those packages and merges them into the existing index (parallel porting)
 const argv = process.argv.slice(2);
@@ -25,6 +25,11 @@ for (const lang of readdirSync("src")) {
     if (!existsSync(`${dir}/index.ts`)) continue; // generated but not ported yet
     const meta = JSON.parse(readFileSync(`${dir}/meta.json`, "utf8")) as Meta;
     if (only && !only.has(meta.pkg)) continue;
+    // ported but not working against the site today: kept in src/, left out of the index until fixed
+    if (meta.broken) {
+      console.log(`skipped ${meta.pkg}: ${meta.broken}`);
+      continue;
+    }
     const out = `dist/${meta.pkg}`;
     mkdirSync(out, { recursive: true });
     // `create(host, meta)` on a global: the app evaluates the bundle and calls it once per source

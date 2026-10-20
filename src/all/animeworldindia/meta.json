@@ -1,0 +1,48 @@
+{
+  "pkg": "all.animeworldindia",
+  "name": "AnimeWorld India",
+  "kind": "anime",
+  "upstreamVersionCode": 24,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "bn",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "en",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "hi",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "ja",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "ml",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "mr",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "ta",
+      "baseUrl": "https://anime-world.co"
+    },
+    {
+      "lang": "te",
+      "baseUrl": "https://anime-world.co"
+    }
+  ],
+  "broken": "anime-world.co redirects to a parked domain"
+}

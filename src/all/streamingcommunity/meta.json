@@ -1,0 +1,15 @@
+{
+  "pkg": "all.streamingcommunity",
+  "name": "StreamingCommunity",
+  "kind": "anime",
+  "upstreamVersionCode": 23,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    { "lang": "en", "baseUrl": "https://streamingunity.vip/en", "name": "StreamingUnity (Movie)" },
+    { "lang": "it", "baseUrl": "https://streamingunity.vip/it", "name": "StreamingUnity (Movie)" },
+    { "lang": "en", "baseUrl": "https://streamingunity.vip/en", "name": "StreamingUnity (Tv)" },
+    { "lang": "it", "baseUrl": "https://streamingunity.vip/it", "name": "StreamingUnity (Tv)" }
+  ]
+}

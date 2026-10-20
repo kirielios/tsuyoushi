@@ -1,0 +1,16 @@
+{
+  "pkg": "all.chineseanime",
+  "name": "ChineseAnime",
+  "kind": "anime",
+  "upstreamVersionCode": 36,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "theme": "animestream",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.chineseanime.in"
+    }
+  ]
+}

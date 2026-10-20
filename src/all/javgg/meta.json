@@ -1,0 +1,10 @@
+{
+  "pkg": "all.javgg",
+  "name": "JavGG",
+  "kind": "anime",
+  "upstreamVersionCode": 22,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [{ "lang": "all", "baseUrl": "https://javgg.net" }]
+}

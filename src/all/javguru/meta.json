@@ -1,0 +1,10 @@
+{
+  "pkg": "all.javguru",
+  "name": "Jav Guru",
+  "kind": "anime",
+  "upstreamVersionCode": 47,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [{ "lang": "all", "baseUrl": "https://jav.guru" }]
+}

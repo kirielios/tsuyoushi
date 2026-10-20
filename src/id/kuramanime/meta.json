@@ -1,0 +1,16 @@
+{
+  "pkg": "id.kuramanime",
+  "name": "Kuramanime",
+  "kind": "anime",
+  "upstreamVersionCode": 24,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://v8.kuramanime.tel"
+    }
+  ],
+  "broken": "the player now needs an authorization value built in obfuscated leviathan.js; no playable videos"
+}

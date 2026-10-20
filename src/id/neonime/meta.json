@@ -1,0 +1,16 @@
+{
+  "pkg": "id.neonime",
+  "name": "NeoNime",
+  "kind": "anime",
+  "upstreamVersionCode": 27,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "id",
+      "baseUrl": "https://neonime.ink"
+    }
+  ],
+  "broken": "neonime.ink expired (2026-08); no new domain found"
+}

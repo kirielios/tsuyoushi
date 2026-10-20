@@ -1,0 +1,15 @@
+{
+  "pkg": "all.xvideos",
+  "name": "Xvideos",
+  "kind": "anime",
+  "upstreamVersionCode": 3,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.xvideos.com"
+    }
+  ]
+}

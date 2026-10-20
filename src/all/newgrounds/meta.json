@@ -1,0 +1,15 @@
+{
+  "pkg": "all.newgrounds",
+  "name": "Newgrounds",
+  "kind": "anime",
+  "upstreamVersionCode": 1,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "all",
+      "baseUrl": "https://www.newgrounds.com"
+    }
+  ]
+}

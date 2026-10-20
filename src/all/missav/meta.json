@@ -1,0 +1,10 @@
+{
+  "pkg": "all.missav",
+  "name": "MissAV",
+  "kind": "anime",
+  "upstreamVersionCode": 32,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [{ "lang": "all", "baseUrl": "https://missav.live", "mirrors": ["https://missav.live", "https://missav.ai", "https://missav.ws"] }]
+}
