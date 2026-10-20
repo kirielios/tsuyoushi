@@ -3,15 +3,13 @@
   "name": "AnimeIndo",
   "kind": "anime",
   "upstreamVersionCode": 32,
-  "port": 1,
+  "port": 2,
   "libVersion": "16",
   "contentWarning": "SAFE",
-  "theme": "animestream",
   "sources": [
     {
       "lang": "id",
       "baseUrl": "https://animeindo.skin"
     }
-  ],
-  "broken": "animeindo.skin now runs a different (Livewire movie) CMS; upstream is broken too"
+  ]
 }
