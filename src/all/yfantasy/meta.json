@@ -3,7 +3,7 @@
   "name": "YFantasy",
   "kind": "anime",
   "upstreamVersionCode": 3,
-  "port": 1,
+  "port": 2,
   "libVersion": "16",
   "contentWarning": "NSFW",
   "sources": [

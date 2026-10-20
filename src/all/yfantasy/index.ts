@@ -145,8 +145,37 @@ export default class YFantasy extends AnimeHttpSource {
     return (this._episodeExtractor ??= new EpisodeExtractor(this.client, this.headers, this.baseUrl));
   }
 
-  private async getCatalog(): Promise<VideoEntry[]> {
-    return (await this.client.get(CATALOG_URL, this.headers)).parseAs<AnimeDto[]>().map(animeEntry);
+  private catalog?: { at: number; list: Promise<VideoEntry[]> };
+  /** Kept a few minutes: listing, details and episodes all read it. */
+  private getCatalog(): Promise<VideoEntry[]> {
+    if (!this.catalog || Date.now() - this.catalog.at > 300_000) {
+      const list = this.fetchCatalog();
+      list.catch(() => (this.catalog = undefined));
+      this.catalog = { at: Date.now(), list };
+    }
+    return this.catalog.list;
+  }
+
+  /**
+   * The GitHub catalog stopped carrying thumbnails (2026-10), so they come from the site's feed: one listing call for
+   * most, and the feed entry of each one it left out.
+   */
+  private async fetchCatalog(): Promise<VideoEntry[]> {
+    const [catalog, feed] = await Promise.all([
+      this.client.get(CATALOG_URL, this.headers).then((r) => r.parseAs<AnimeDto[]>()),
+      this.client.get(`${FEED_URL}?limit=100`, this.headers).then((r) => r.parseAs<FeedDto>().items, () => []),
+    ]);
+    const images = new Map(feed.map((it) => [it.id, it.publicSegment?.imageUrl]));
+    await Promise.all(
+      catalog
+        .filter((d) => d.currentSegment && !d.currentSegment.imageUrl && !images.get(d.videoId))
+        .map(async (d) => {
+          const item = await this.client.get(`${FEED_URL}?limit=1&videoId=${encodeURIComponent(d.videoId)}`, this.headers).then((r) => r.parseAs<FeedDto>().items[0], () => undefined);
+          if (item?.id === d.videoId) images.set(d.videoId, item.publicSegment?.imageUrl);
+        }),
+    );
+    for (const d of catalog) if (d.currentSegment && !d.currentSegment.imageUrl) d.currentSegment.imageUrl = images.get(d.videoId) ?? null;
+    return catalog.map(animeEntry);
   }
 
   private async getRandomFeed(): Promise<VideoEntry[]> {
