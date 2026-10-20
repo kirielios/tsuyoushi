@@ -7,6 +7,7 @@ import {
   MangasPage,
   parallelCatchingFlatMap,
   parseHtml,
+  POST,
   SAnime,
   SEpisode,
   urlWithoutDomain,
@@ -21,6 +22,7 @@ import { FilemoonExtractor } from "../../../libs/filemoonextractor/index.ts";
 import { StreamTapeExtractor } from "../../../libs/streamtapeextractor/index.ts";
 import { StreamWishExtractor } from "../../../libs/streamwishextractor/index.ts";
 import { VidGuardExtractor } from "../../../libs/vidguardextractor/index.ts";
+import { findAuthorization } from "./leviathan.ts";
 
 const PREF_QUALITY_KEY = "preferred_quality";
 const PREF_QUALITY_TITLE = "Preferred quality";
@@ -152,6 +154,11 @@ export default class Kuramanime extends AnimeHttpSource {
     const csrfToken = doc.selectFirst("meta[name=csrf-token]")?.attr("content");
     if (!csrfToken) return [];
 
+    // jLoadSecure posts a constant "authorization" that lives, obfuscated, in the script #tokenAuthJs names.
+    const authJs = doc.selectFirst("#tokenAuthJs")?.attr("value");
+    const authorization = authJs ? await this.getAuthorization(new URL(authJs, response.url).href) : null;
+    if (!authorization) return [];
+
     const servers = doc
       .select("select#changeServer > option")
       .map((it) => [it.attr("value"), it.text().split(" (")[0]] as const)
@@ -161,6 +168,15 @@ export default class Kuramanime extends AnimeHttpSource {
     const headers = this.headersBuilder();
     headers.set("Referer", episodeUrl);
     headers.set("X-Requested-With", "XMLHttpRequest");
+
+    // The player's "page" parameter: #checkEp answers it (the site falls back to 1).
+    const checkEp = doc.selectFirst("#checkEp")?.attr("value");
+    let page = "1";
+    if (checkEp) {
+      const sourceHeaders = new Headers(headers);
+      sourceHeaders.set("X-CSRF-TOKEN", csrfToken);
+      page = (await this.client.get(new URL(checkEp, response.url).href, sourceHeaders).then((r) => r.text()).catch(() => "")).replace(/^[" \n]+|[" \n]+$/g, "") || "1";
+    }
 
     return parallelCatchingFlatMap(servers, async ([server, serverName]) => {
       const newHeaders = new Headers(headers);
@@ -175,11 +191,12 @@ export default class Kuramanime extends AnimeHttpSource {
       const newUrl = new URL(episodeUrl);
       newUrl.searchParams.append(scriptData.tokenParam, hash);
       newUrl.searchParams.append(scriptData.serverParam, server);
+      newUrl.searchParams.append("page", page);
 
-      // ponytail: the site now loads the player with jLoadSecure (from the obfuscated /storage/leviathan.js), a POST
-      // carrying an "authorization" value built inside that script; without it this page has no player, so every
-      // server gives no videos (2026-10-20). Needs a decision on how to obtain that value.
-      const playerDoc: Document = (await this.executeSuccess(GET(newUrl.href, headers))).asJsoup();
+      const playerHeaders = new Headers(headers);
+      playerHeaders.set("X-CSRF-TOKEN", csrfToken);
+      const body = new URLSearchParams({ authorization });
+      const playerDoc: Document = (await this.executeSuccess(POST(newUrl.href, playerHeaders, body, "application/x-www-form-urlencoded"))).asJsoup();
       const url = playerDoc.selectFirst("div.video-content iframe")?.attr("src") || null;
       if (url != null) {
         switch (server) {
@@ -200,6 +217,14 @@ export default class Kuramanime extends AnimeHttpSource {
         return new Video({ videoUrl: src, videoTitle: `${it.attr("size")}p - ${serverName}` });
       });
     });
+  }
+
+  private async getAuthorization(scriptUrl: string): Promise<string | null> {
+    try {
+      return findAuthorization((await this.client.get(scriptUrl, this.headers)).text());
+    } catch {
+      return null;
+    }
   }
 
   private async getScriptData(origin: string, scriptName: string): Promise<ScriptData | null> {
