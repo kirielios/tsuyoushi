@@ -17,6 +17,8 @@ Keiyoushi's extensions are Android APKs: outside Mihon they only run inside Suwa
 
 ## Usage
 
+Browse every extension, and the guide, at **[kirielios.github.io/tsuyoushi](https://kirielios.github.io/tsuyoushi/)**.
+
 The reader built for Tsuyoushi is **[NeetShelf](https://neetshelf.app)**, a manga reader that runs in the browser
 (desktop, tablet and phone).
 
@@ -56,6 +58,7 @@ Contributions are welcome! Fork, port or fix an extension on a branch, run
 | `sdk/` | Mihon/Keiyoushi API in TypeScript (`KeiSource`, models, filters, Jsoup and OkHttp helpers). Names match the Kotlin so ports read line by line. |
 | `src/<lang>/<name>/` | One port per upstream extension: `meta.json` + `icon.png` (generated), `index.ts` (hand-ported). |
 | `tools/` | `generate`, `build`, `serve`, `check` |
+| `site/` | The website (home, extension list, guide), copied into `dist/` by `build`. Plain HTML, CSS and JS that read `index.json`. |
 | `dist/` | Build output: `index.json` and one bundle per extension. This is what gets published. |
 
 ### Porting an extension

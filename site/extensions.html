@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Extensions · Tsuyoushi</title>
+    <meta name="description" content="Every manga and anime extension in the Tsuyoushi repo." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="bar">
+      <div class="wrap">
+        <a class="logo" href="./"><span class="logo-mark">強</span> Tsuyoushi</a>
+        <nav class="nav" aria-label="Main">
+          <a href="./">Home</a>
+          <a href="extensions.html" aria-current="page">Extensions</a>
+          <a href="guide.html">Guide</a>
+          <a href="https://github.com/kirielios/tsuyoushi">GitHub</a>
+        </nav>
+        <button class="theme" type="button" aria-label="Switch light or dark"></button>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <div class="page-head">
+        <h1>Extensions</h1>
+        <p>Everything in the repo. Add <code data-repo></code> to your reader to install them.</p>
+      </div>
+
+      <div class="card filters" role="search">
+        <input class="search" data-q type="search" placeholder="Search by name or site…" aria-label="Search extensions" />
+        <div class="seg" data-seg="lang" role="group" aria-label="Language">
+          <button type="button" value="any">All</button>
+          <button type="button" value="en">EN</button>
+          <button type="button" value="id">ID</button>
+          <button type="button" value="all">Multi</button>
+        </div>
+        <div class="seg" data-seg="kind" role="group" aria-label="Kind">
+          <button type="button" value="any">All</button>
+          <button type="button" value="manga">Manga</button>
+          <button type="button" value="anime">Anime</button>
+        </div>
+        <label class="check"><input type="checkbox" data-nsfw /> Show 18+</label>
+        <span class="count" data-count aria-live="polite">Loading…</span>
+      </div>
+
+      <div class="grid" data-grid></div>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p>Missing a site? Open a request. Site owners who want an extension removed can open an issue too; it will be taken down.</p>
+        <p><a href="https://github.com/kirielios/tsuyoushi/issues/new">Request a source</a> · Apache-2.0</p>
+      </div>
+    </footer>
+    <script src="site.js" type="module"></script>
+  </body>
+</html>

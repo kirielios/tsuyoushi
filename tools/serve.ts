@@ -5,7 +5,7 @@ import { readFile } from "node:fs/promises";
 import { extname, join, normalize } from "node:path";
 
 const PORT = Number(process.env.PORT ?? 4600);
-const TYPES: Record<string, string> = { ".json": "application/json", ".js": "text/javascript", ".png": "image/png" };
+const TYPES: Record<string, string> = { ".json": "application/json", ".js": "text/javascript", ".png": "image/png", ".html": "text/html", ".css": "text/css", ".svg": "image/svg+xml" };
 
 createServer(async (req, res) => {
   const path = normalize(decodeURIComponent(new URL(req.url ?? "/", "http://x").pathname)).replace(/^(\.\.[/\\])+/, "");

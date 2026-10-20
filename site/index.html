@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tsuyoushi</title>
+    <meta name="description" content="Keiyoushi manga and Aniyomi anime extensions, ported to JavaScript for web-based readers and players." />
+    <meta property="og:title" content="Tsuyoushi" />
+    <meta property="og:description" content="Manga and anime extensions for web-based readers, in one repo URL." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="bar">
+      <div class="wrap">
+        <a class="logo" href="./"><span class="logo-mark">強</span> Tsuyoushi</a>
+        <nav class="nav" aria-label="Main">
+          <a href="./" aria-current="page">Home</a>
+          <a href="extensions.html">Extensions</a>
+          <a href="guide.html">Guide</a>
+          <a href="https://github.com/kirielios/tsuyoushi">GitHub</a>
+        </nav>
+        <button class="theme" type="button" aria-label="Switch light or dark"></button>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="hero">
+        <div>
+          <span class="sticker">Extension repo for web readers</span>
+          <h1>Read &amp; watch <span class="hl">anywhere.</span></h1>
+          <p class="lead">Keiyoushi's manga extensions and Aniyomi's anime extensions, ported to JavaScript. No APK, no JVM, no server to keep running.</p>
+          <div class="actions">
+            <a class="btn" href="guide.html#getting-started">Get started →</a>
+            <a class="btn white" href="extensions.html">Browse extensions</a>
+          </div>
+        </div>
+        <div class="card repo">
+          <h2>Repo URL</h2>
+          <div class="copy">
+            <input data-repo readonly aria-label="Repo URL" />
+            <button type="button" data-copy>Copy</button>
+          </div>
+          <p>Paste it into your reader's extension repos, or add it to NeetShelf in one click.</p>
+          <p><a class="btn pink sm" data-add href="https://neetshelf.app">Add to NeetShelf</a></p>
+        </div>
+      </section>
+
+      <section class="stats" data-stats aria-label="In this repo">
+        <div class="card stat"><b data-stat="extensions">—</b><span>extensions</span></div>
+        <div class="card stat"><b data-stat="sources">—</b><span>sources</span></div>
+        <div class="card stat"><b data-stat="anime">—</b><span>anime extensions</span></div>
+        <div class="card stat"><b data-stat="langs">—</b><span>languages</span></div>
+      </section>
+
+      <section class="section">
+        <h2>What's inside</h2>
+        <div class="features">
+          <a class="card feature" href="extensions.html">
+            <div class="icon" aria-hidden="true">📚</div>
+            <h3>Extensions</h3>
+            <p>Hundreds of English, Indonesian and multi-language manga sources, plus Indonesian anime.</p>
+            <span class="more">Find extensions</span>
+          </a>
+          <a class="card feature" href="guide.html#getting-started">
+            <div class="icon" aria-hidden="true">⚡</div>
+            <h3>Get started</h3>
+            <p>Add the repo to your reader, install sources, and start reading in under a minute.</p>
+            <span class="more">Read the guide</span>
+          </a>
+          <a class="card feature" href="guide.html#troubleshooting">
+            <div class="icon" aria-hidden="true">🛠</div>
+            <h3>Troubleshooting</h3>
+            <p>Covers not loading, a source behind Cloudflare, videos that won't play. Here's what to try.</p>
+            <span class="more">Fix it</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Three steps</h2>
+        <ol class="steps">
+          <li class="card">
+            <div>
+              <h3>Copy the repo URL</h3>
+              <p>It's the box above. It always points at the newest build.</p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3>Add it to your reader</h3>
+              <p>In NeetShelf: <b>Settings → Extension repos</b>, paste, <b>Add</b>.</p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3>Install sources</h3>
+              <p><b>Browse → Extensions</b>, pick what you read. Updates arrive on their own.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <div class="card note pink">
+          <p>
+            <b>Outdated or empty list?</b> These are JavaScript bundles for web readers, not APKs. Mihon, TachiyomiSY and Komikku can't install them; use
+            Keiyoushi's own repo there.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p>
+          Tsuyoushi hosts no content. Each extension tells a reader how to fetch a site's public pages, on the reader's own device. Not affiliated with
+          Keiyoushi, Aniyomi or Mihon. Credit for the original extensions goes to their contributors.
+        </p>
+        <p><a href="https://github.com/kirielios/tsuyoushi">GitHub</a> · <a href="https://github.com/kirielios/tsuyoushi/issues/new">Request a source</a> · Apache-2.0</p>
+      </div>
+    </footer>
+    <script src="site.js" type="module"></script>
+  </body>
+</html>

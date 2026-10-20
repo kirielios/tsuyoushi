@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guide · Tsuyoushi</title>
+    <meta name="description" content="Getting started with Tsuyoushi, troubleshooting, and using the extensions in your own reader." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="bar">
+      <div class="wrap">
+        <a class="logo" href="./"><span class="logo-mark">強</span> Tsuyoushi</a>
+        <nav class="nav" aria-label="Main">
+          <a href="./">Home</a>
+          <a href="extensions.html">Extensions</a>
+          <a href="guide.html" aria-current="page">Guide</a>
+          <a href="https://github.com/kirielios/tsuyoushi">GitHub</a>
+        </nav>
+        <button class="theme" type="button" aria-label="Switch light or dark"></button>
+      </div>
+    </header>
+
+    <main id="main" class="wrap doc">
+      <nav class="card toc" aria-label="On this page">
+        <b>On this page</b>
+        <a href="#getting-started">Getting started</a>
+        <a href="#helper">Why a helper?</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#requests">Requests</a>
+        <a href="#own-reader">Your own reader</a>
+        <a href="#contributing">Contributing</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+
+      <article class="prose">
+        <h1>Guide</h1>
+        <p>
+          Keiyoushi's extensions are Android APKs: outside Mihon they only run inside Suwayomi-Server, a JVM app you have to install and keep running. Tsuyoushi builds
+          each one into a small JavaScript bundle instead, so a web reader loads it straight from a URL.
+        </p>
+
+        <h2 id="getting-started">Getting started</h2>
+        <p>The reader built for Tsuyoushi is <a href="https://neetshelf.app">NeetShelf</a>. It runs in the browser on a computer, tablet or phone.</p>
+        <ol class="steps">
+          <li class="card">
+            <div>
+              <h3>Add the repo</h3>
+              <p>Open <b>Settings → Extension repos</b> and paste <code data-repo></code>, or use <a data-add href="https://neetshelf.app">Add to NeetShelf</a>.</p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3>Install sources</h3>
+              <p>Go to <b>Browse → Extensions</b>. Manga and anime have their own tabs.</p>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h3>Install the helper</h3>
+              <p>Get the NeetShelf Helper for Chrome, Edge or Firefox (Orion on iPhone and iPad). Without it, manga still loads through a shared proxy, but anime does not.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h2 id="helper">Why a helper?</h2>
+        <p>
+          Manga and anime sites send no CORS headers, and many only answer when a request names them as the referrer. A plain browser tab can do neither, so the
+          extensions run either on a JavaScript server, or in the browser with a helper extension that makes the requests for them.
+        </p>
+        <div class="card note">
+          <p>Anime extensions return each video's URL together with the headers its host needs (Referer, Origin). The player has to send those with every request of that video, which is why anime needs the helper on your own device.</p>
+        </div>
+
+        <h2 id="troubleshooting">Troubleshooting</h2>
+        <div class="faq">
+          <details class="card">
+            <summary>Extension list says my app is outdated, or it's empty</summary>
+            <div class="body">
+              <p>These bundles are for web readers. Mihon, TachiyomiSY and Komikku install APKs, so use Keiyoushi's own repo there. In NeetShelf, check the URL ends with <code>index.json</code>.</p>
+            </div>
+          </details>
+          <details class="card">
+            <summary>A source shows nothing, or "Cloudflare"</summary>
+            <div class="body">
+              <p>The site wants a browser check before it answers, so nothing can be loaded from it right now. It often clears on its own after a while; until then, another source is the way out.</p>
+            </div>
+          </details>
+          <details class="card">
+            <summary>Covers or pages don't show</summary>
+            <div class="body">
+              <p>Most image hosts only send images when the request names the site as the referrer. Install the helper, and make sure it's on for this site. Its <b>Check</b> page tells you whether headers get through.</p>
+            </div>
+          </details>
+          <details class="card">
+            <summary>An anime episode won't play</summary>
+            <div class="body">
+              <p>Videos need the helper (or NeetShelf Local Server / the Android app). If one server fails, pick another under <b>Quality</b>. Some files can't be seeked in every browser; another source usually works.</p>
+            </div>
+          </details>
+          <details class="card">
+            <summary>A source worked yesterday and broke today</summary>
+            <div class="body">
+              <p>Sites change their layout or domain. Update the extension under <b>Browse → Extensions</b>; if it's still broken, <a href="https://github.com/kirielios/tsuyoushi/issues/new">open an issue</a> with the source name.</p>
+            </div>
+          </details>
+        </div>
+
+        <h2 id="requests">Requests</h2>
+        <p>
+          To request a new source or a fix, <a href="https://github.com/kirielios/tsuyoushi/issues/new">create an issue</a>. The work is volunteer-based, so a request
+          is not a promise. Some sites are impossible or too costly to keep working (Cloudflare challenges, sites that need to run their own JavaScript).
+        </p>
+
+        <h2 id="own-reader">Using it in your own reader</h2>
+        <p><code>index.json</code> lists every source (<code>"format": "mangareader-kei/1"</code>) with its bundle and icon paths. Anime extensions carry <code>"kind": "anime"</code>.</p>
+        <pre><code>{
+  "id": "kei:en.mangapill:en",
+  "pkg": "en.mangapill",
+  "name": "MangaPill",
+  "lang": "en",
+  "baseUrl": "https://mangapill.com",
+  "bundle": "en.mangapill/index.js",
+  "icon": "en.mangapill/icon.png"
+}</code></pre>
+        <p>
+          Each bundle is an IIFE that defines <code>__tsuyoushi.create(host, meta)</code>, returning a source with Mihon's methods (<code>getPopularManga</code>,
+          <code>getLatestUpdates</code>, <code>getSearchManga</code>, <code>getPageList</code>, …). Anime sources follow Aniyomi's contract and add
+          <code>getVideos(episode)</code>.
+        </p>
+        <p>
+          <code>host</code> is everything an extension gets from your reader: <code>fetch</code> (redirects, timeout, cookies), cheerio's <code>load</code>, a user
+          agent and preferences. <a href="https://github.com/kirielios/tsuyoushi/blob/main/tools/node-host.ts">tools/node-host.ts</a> is a complete Node.js host you
+          can copy.
+        </p>
+
+        <h2 id="contributing">Contributing</h2>
+        <p>Fork, port or fix an extension on a branch, then run the checks and open a pull request with the <code>check</code> output:</p>
+        <pre><code>npm run generate -- en/mangapill   # meta.json + icon from upstream
+npm run build
+npm run check -- en.mangapill      # popular, latest, search, details, chapters, pages
+npm run serve                      # http://localhost:4600/index.json</code></pre>
+
+        <h2 id="disclaimer">Disclaimer</h2>
+        <p>
+          Tsuyoushi hosts no manga or video. Each extension only tells a reader how to fetch a site's public pages, and runs on the reader's own device. Site owners
+          or rights holders who want an extension removed can open an issue; it will be taken down.
+        </p>
+        <p>Not affiliated with Keiyoushi, Aniyomi or Mihon/Tachiyomi; don't ask for help with these extensions at their support channels.</p>
+      </article>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p>Credit for the original extensions goes to the Keiyoushi and Aniyomi contributors.</p>
+        <p><a href="https://github.com/kirielios/tsuyoushi">GitHub</a> · Apache-2.0</p>
+      </div>
+    </footer>
+    <script src="site.js" type="module"></script>
+  </body>
+</html>

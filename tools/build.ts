@@ -1,7 +1,7 @@
 // Bundle every ported extension into dist/<pkg>/index.js and write dist/index.json, the URL users paste into the app.
 import { createHash } from "node:crypto";
 import { build } from "esbuild";
-import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 export const FORMAT = "mangareader-kei/1";
 
@@ -71,4 +71,6 @@ for (const lang of readdirSync("src")) {
 }
 entries.sort((a, b) => a.id.localeCompare(b.id));
 writeFileSync("dist/index.json", JSON.stringify({ format: FORMAT, name: "Tsuyoushi (en/id)", extensions: entries }, null, 2) + "\n");
+// the website (https://kirielios.github.io/tsuyoushi/) is published next to the index; it reads index.json itself
+cpSync("site", "dist", { recursive: true });
 console.log(`built ${new Set(entries.map((e) => e.pkg)).size} extensions, ${entries.length} sources -> dist/index.json`);
