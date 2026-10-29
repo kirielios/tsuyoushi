@@ -1,0 +1,24 @@
+{
+  "pkg": "en.anikoto",
+  "name": "Anikoto",
+  "kind": "anime",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "theme": "anikototheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://anikototv.to",
+      "mirrors": [
+        "https://anikototv.to",
+        "https://anikoto.bz",
+        "https://anikoto.cz",
+        "https://anikoto.me",
+        "https://anikoto.net",
+        "https://anikototv.se"
+      ]
+    }
+  ]
+}

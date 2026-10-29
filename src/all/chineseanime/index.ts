@@ -2,6 +2,7 @@
 import { ListPreference, type PreferenceScreen, type Video } from "../../../sdk/index.ts";
 import { AnimeStream } from "../../../themes/animestream/index.ts";
 import { DailymotionExtractor } from "../../../libs/dailymotionextractor/index.ts";
+import { RumbleExtractor } from "../../../libs/rumbleextractor/index.ts";
 import { StreamWishExtractor } from "../../../libs/streamwishextractor/index.ts";
 import { VidHideExtractor } from "../../../libs/vidhideextractor/index.ts";
 import { VatchusExtractor } from "./extractors/vatchus.ts";
@@ -26,6 +27,8 @@ export default class ChineseAnime extends AnimeStream {
     if (url.includes("dailymotion")) return new DailymotionExtractor(this.client, this.headers).videosFromUrl(url, prefix);
     if (url.includes("embedwish")) return new StreamWishExtractor(this.client, this.headers).videosFromUrl(url, (q) => `${prefix} - ${q}`);
     if (url.includes("vatchus")) return new VatchusExtractor(this.client, this.headers).videosFromUrl(url, prefix);
+    // Not upstream: the site now embeds Rumble.
+    if (url.includes("rumble.com")) return new RumbleExtractor(this.client, this.headers).videosFromUrl(url, prefix);
     if (url.includes("donghua.xyz/v/")) return new VidHideExtractor(this.client, this.headers).videosFromUrl(url, (q) => `${prefix} ${q}`);
     return [];
   }

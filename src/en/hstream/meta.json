@@ -1,0 +1,10 @@
+{
+  "pkg": "en.hstream",
+  "name": "Hstream",
+  "kind": "anime",
+  "upstreamVersionCode": 12,
+  "port": 1,
+  "libVersion": "14",
+  "contentWarning": "NSFW",
+  "sources": [{ "lang": "en", "baseUrl": "https://hstream.moe" }]
+}

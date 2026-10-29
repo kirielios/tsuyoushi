@@ -1,0 +1,20 @@
+{
+  "pkg": "en.aniwave",
+  "name": "AniWave (Unoriginal)",
+  "kind": "anime",
+  "upstreamVersionCode": 2,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "theme": "anikototheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://animewave.to",
+      "mirrors": [
+        "https://animewave.to",
+        "https://aniwave.cz"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pkg": "en.kotokai",
+  "name": "AnimeKai (Unoriginal)",
+  "kind": "anime",
+  "upstreamVersionCode": 0,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "theme": "anikototheme",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://animekaitv.to",
+      "mirrors": [
+        "https://animekaitv.to",
+        "https://anikaitv.to",
+        "https://animekai.se",
+        "https://anikai.se"
+      ]
+    }
+  ]
+}

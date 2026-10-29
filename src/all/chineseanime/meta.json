@@ -3,7 +3,7 @@
   "name": "ChineseAnime",
   "kind": "anime",
   "upstreamVersionCode": 36,
-  "port": 1,
+  "port": 2,
   "libVersion": "16",
   "contentWarning": "SAFE",
   "theme": "animestream",

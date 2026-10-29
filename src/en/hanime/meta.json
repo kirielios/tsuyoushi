@@ -1,0 +1,10 @@
+{
+  "pkg": "en.hanime",
+  "name": "hanime.tv",
+  "kind": "anime",
+  "upstreamVersionCode": 24,
+  "port": 1,
+  "libVersion": "14",
+  "contentWarning": "NSFW",
+  "sources": [{ "lang": "en", "baseUrl": "https://hanime.tv" }]
+}

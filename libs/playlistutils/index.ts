@@ -141,7 +141,8 @@ function formatBitrate(bps: number): string {
   return bps > 0 ? `${bps} bps` : "";
 }
 
-function toWebVtt(subData: string): string {
+/** SubRip (or WebVTT) text to WebVTT. */
+export function toWebVtt(subData: string): string {
   const data = subData.replace(/^﻿/, "").replace(/\r\n/g, "\n").replace(/\r/g, "\n").trimStart();
   if (data.startsWith("WEBVTT") || !new RegExp(SRT_TIMECODE_REGEX.source).test(data)) return data;
   return "WEBVTT\n\n" + data.replace(SRT_TIMECODE_REGEX, "$1.$2 --> $3.$4").replace(SRT_CUE_INDEX_REGEX, "");

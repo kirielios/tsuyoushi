@@ -1,0 +1,23 @@
+{
+  "pkg": "en.kisskh",
+  "name": "KissKH",
+  "kind": "anime",
+  "upstreamVersionCode": 10,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "NSFW",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kisskh.ovh",
+      "mirrors": [
+        "https://kisskh.ovh",
+        "https://kisskh.do",
+        "https://kisskh.co",
+        "https://kisskh.id",
+        "https://kisskh.la",
+        "https://kisskh.is"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pkg": "en.luciferdonghua",
+  "name": "LuciferDonghua",
+  "kind": "anime",
+  "upstreamVersionCode": 28,
+  "port": 1,
+  "libVersion": "16",
+  "contentWarning": "SAFE",
+  "theme": "animestream",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://luciferdonghua.in"
+    }
+  ]
+}

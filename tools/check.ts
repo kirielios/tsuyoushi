@@ -80,7 +80,7 @@ await Promise.all(
   Array.from({ length: Math.min(parallel, queue.length) }, async () => {
     for (let e; (e = queue.shift()); ) {
       // a source that throws outside a step (a null title, say) fails here instead of ending the run
-      const r = await checkOne(e).catch((err: Error) => ({ id: e.id, name: e.name, baseUrl: e.baseUrl, steps: [{ step: "crash", ok: false, ms: 0, note: err.message.slice(0, 160) }], info: {} }));
+      const r: Result = await checkOne(e).catch((err: Error): Result => ({ id: e.id, name: e.name, baseUrl: e.baseUrl, steps: [{ step: "crash", ok: false, ms: 0, note: err.message.slice(0, 160) }], info: {} }));
       results.push(r);
       const bad = r.steps.filter((s) => !s.ok);
       if (verbose) {

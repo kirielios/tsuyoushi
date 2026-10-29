@@ -1,0 +1,16 @@
+{
+  "pkg": "en.kickassanime",
+  "name": "KickAssAnime",
+  "kind": "anime",
+  "upstreamVersionCode": 63,
+  "port": 1,
+  "libVersion": "14",
+  "contentWarning": "SAFE",
+  "sources": [
+    {
+      "lang": "en",
+      "baseUrl": "https://kaa.lt",
+      "mirrors": ["https://kaa.lt", "https://kaa.to"]
+    }
+  ]
+}
