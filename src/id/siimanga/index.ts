@@ -3,7 +3,11 @@ import type { Element, SChapter } from "../../../sdk/index.ts";
 import { ChapterMode, Madara } from "../../../themes/madara/index.ts";
 
 export default class Siikomik extends Madara {
+  protected override supportsPostId = false;
   protected override mangaSubString = "komik";
+  protected override archiveSelector() {
+    return ".slider__item";
+  }
   protected override chapterMode = ChapterMode.MangaAjax;
 
   protected override chapterFromElement(element: Element, mangaPath: string): SChapter | null {

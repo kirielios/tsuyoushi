@@ -2,7 +2,7 @@
   "pkg": "id.roseveil",
   "name": "Roseveil",
   "upstreamVersionCode": 0,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "MIXED",
   "theme": "loneseal",
@@ -11,5 +11,6 @@
       "lang": "id",
       "baseUrl": "https://roseveil.org"
     }
-  ]
+  ],
+  "broken": "roseveil.org no longer resolves: whois shows nameservers suspend1/2.liqu.id (registrar suspension, updated 2026-10-29); no new domain found (2026-10-29)"
 }

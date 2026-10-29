@@ -1,5 +1,5 @@
 // Port of keiyoushi/extensions-source src/id/otascans/OtaScans.kt
-import { ClientBuilder, DateTimeFormatter, Locale, ZoneOffset, startOfDayUtc, toHttpUrl, type Document, type SManga } from "../../../sdk/index.ts";
+import { ClientBuilder, DateTimeFormatter, Locale, ZoneOffset, startOfDayUtc, toHttpUrl, type Document, type Element, type SChapter, type SManga } from "../../../sdk/index.ts";
 import { ChapterMode, Madara } from "../../../themes/madara/index.ts";
 
 export default class OtaScans extends Madara {
@@ -26,6 +26,13 @@ export default class OtaScans extends Madara {
       const manga = this.archiveManga(element, slug);
       return manga ? [manga] : [];
     });
+  }
+
+  // Not upstream: coin-locked chapters read as empty without an account; mark them like Siikomik does.
+  protected override chapterFromElement(element: Element, mangaPath: string): SChapter | null {
+    const chapter = super.chapterFromElement(element, mangaPath);
+    if (chapter && element.hasClass("premium-block")) chapter.name = `🔒 ${chapter.name}`;
+    return chapter;
   }
 
   protected override parseChapterDate(date: string | null): number {

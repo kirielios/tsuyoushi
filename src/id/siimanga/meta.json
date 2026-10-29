@@ -1,8 +1,8 @@
 {
   "pkg": "id.siimanga",
   "name": "Siikomik",
-  "upstreamVersionCode": 1,
-  "port": 1,
+  "upstreamVersionCode": 2,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "MIXED",
   "theme": "madara",

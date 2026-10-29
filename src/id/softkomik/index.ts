@@ -21,6 +21,7 @@ import {
   type Request,
   type Response,
 } from "../../../sdk/index.ts";
+import { CryptoAES } from "../../../libs/cryptoaes/index.ts";
 import { GenreFilter, MinChapterFilter, SortFilter, StatusFilter, TypeFilter } from "./filters.ts";
 
 // Dto.kt
@@ -53,10 +54,18 @@ interface ChapterPageImagesDto {
 }
 interface ChapterPageDataDto {
   _id: string;
-  imageSrc?: string[];
   storageInter2?: boolean | null;
   backBS3?: boolean | null;
-  created_at: string;
+}
+interface EncryptedPropsDto {
+  _stk: string;
+}
+interface MangaPropsDto {
+  data: MangaDetailsDto;
+}
+interface ChapterPropsDto {
+  data: { data: ChapterPageDataDto };
+  imgList?: string[];
 }
 interface ChapterListDto {
   chapter: ChapterDto[];
@@ -91,6 +100,9 @@ const requiredLoginGenres = ["ecchi", "mature"];
 const sessionKeyChapterList = "chapter-list";
 const sessionKeyChapterImage = "chapter-image";
 const apiUrl = "https://api.softkomik.org";
+
+// NEXT_PUBLIC_ENCRYPTION_KEY from the site's JS bundle.
+const pagePropsKey = "nYTInq9MwR4pWa8yeXtu/2iO3t9nGP65WHpWEvqpEdU=";
 
 // Inlined in the site's chapter chunk as `String("...").trim()` and appended to every image URL.
 const imageIdParam = "T4Kmwztku";
@@ -185,9 +197,15 @@ export default class Softkomik extends KeiSource {
     return this.getMangaDetails(slug);
   }
 
+  // Detail and chapter pages carry their data CryptoJS-encrypted in `pageProps._stk`.
+  private async getPageProps<T>(url: string): Promise<T> {
+    const stk = extractNextJs<EncryptedPropsDto>(await this.client.get(url), hasKeys("_stk"))?._stk;
+    if (stk == null) throw new Error("Could not find page data");
+    return JSON.parse(await CryptoAES.decrypt(stk, pagePropsKey)) as T;
+  }
+
   private async getMangaDetails(slug: string): Promise<SManga> {
-    const manga = extractNextJs<MangaDetailsDto>(await this.client.get(`${this.baseUrl}/${slug}`, this.rscHeaders), hasKeys("gambar", "title"));
-    if (manga == null) throw new Error("Could not find manga details");
+    const manga = (await this.getPageProps<MangaPropsDto>(`${this.baseUrl}/${slug}`)).data;
 
     const m = SManga.create();
     m.url = slug;
@@ -262,10 +280,10 @@ export default class Softkomik extends KeiSource {
     const slug = segments[0];
     const chapterNum = segments[2];
 
-    const data = extractNextJs<ChapterPageDataDto>(await this.client.get(`${this.baseUrl}${chapter.url}`, this.rscHeaders), hasKeys("_id", "created_at"));
-    if (data == null) throw new Error("Could not find chapter data");
+    const props = await this.getPageProps<ChapterPropsDto>(`${this.baseUrl}${chapter.url}`);
+    const data = props.data.data;
 
-    let imageSrc = data.imageSrc ?? [];
+    let imageSrc = props.imgList ?? [];
     if (imageSrc.length === 0) {
       const urlApi = `${apiUrl}/komik/${slug}/chapter/${chapterNum}/imgs/${data._id}`;
 

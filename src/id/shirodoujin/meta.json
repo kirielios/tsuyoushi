@@ -2,7 +2,7 @@
   "pkg": "id.shirodoujin",
   "name": "Shiro Doujin",
   "upstreamVersionCode": 1,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "NSFW",
   "theme": "zmanga",

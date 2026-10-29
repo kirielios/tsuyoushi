@@ -23,12 +23,12 @@ export interface BrowseManga {
   cover?: string | null;
 }
 
-export function browseToSManga(it: BrowseManga): SManga {
+export function browseToSManga(it: BrowseManga, baseUrl: string): SManga {
   const manga = SManga.create();
   // old urls compatibility
   manga.url = `/manga/${it.slug}/`;
   manga.title = it.title;
-  manga.thumbnail_url = it.cover ?? undefined;
+  manga.thumbnail_url = it.cover ? (it.cover.startsWith("http") ? it.cover : `${baseUrl}${it.cover}`) : undefined;
   return manga;
 }
 
@@ -47,12 +47,12 @@ export interface Manga {
 }
 
 /** `parseBodyFragment` stands in for Jsoup.parseBodyFragment(html, baseUrl). */
-export function mangaToSManga(it: Manga, parseBodyFragment: (html: string) => Document): SManga {
+export function mangaToSManga(it: Manga, parseBodyFragment: (html: string) => Document, baseUrl: string): SManga {
   const manga = SManga.create();
   // old urls compatibility
   manga.url = `/manga/${it.slug}/`;
   manga.title = it.title;
-  manga.thumbnail_url = it.cover ?? undefined;
+  manga.thumbnail_url = it.cover ? (it.cover.startsWith("http") ? it.cover : `${baseUrl}${it.cover}`) : undefined;
   manga.author = it.author ?? undefined;
   switch (it.status?.toLowerCase()) {
     case "ongoing":
@@ -124,4 +124,10 @@ export interface ApiGenre {
   id: number;
   name: string;
   slug: string;
+}
+
+export interface VisitTokenResponse {
+  status?: boolean;
+  token?: string | null;
+  expires_at?: number | null;
 }

@@ -2,7 +2,7 @@
   "pkg": "id.manhwalistorg",
   "name": "IsekaiKomik",
   "upstreamVersionCode": 2,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "SAFE",
   "theme": "mangathemesia",
@@ -11,5 +11,6 @@
       "lang": "id",
       "baseUrl": "https://ch1.isekaikomik.site"
     }
-  ]
+  ],
+  "broken": "chapter images are all on cdn.isekaikomik.com, which answers HTTP 523 (Cloudflare: origin unreachable) while the site itself is up; the site's own reader points at the same host (2026-10-29)"
 }

@@ -2,7 +2,7 @@
   "pkg": "id.otascans",
   "name": "Ota Scans",
   "upstreamVersionCode": 4,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "MIXED",
   "theme": "madara",
