@@ -10,5 +10,6 @@
       "lang": "en",
       "baseUrl": "https://mangade.io"
     }
-  ]
+  ],
+  "broken": "api.mangade.io serves an expired TLS certificate (Let's Encrypt, notAfter 2026-10-25), so every request fails; the API itself still answers when the cert is ignored, so this may come back once they renew (checked 2026-10-29)"
 }

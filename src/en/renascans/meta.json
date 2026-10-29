@@ -2,10 +2,9 @@
   "pkg": "en.renascans",
   "name": "Renascans",
   "upstreamVersionCode": 0,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "SAFE",
-  "theme": "iken",
   "sources": [
     {
       "lang": "en",

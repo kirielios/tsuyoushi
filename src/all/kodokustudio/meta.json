@@ -1,15 +1,14 @@
 {
   "pkg": "all.kodokustudio",
   "name": "Kodoku Studio",
-  "upstreamVersionCode": 0,
-  "port": 1,
+  "upstreamVersionCode": 56,
+  "port": 2,
   "libVersion": "1.6",
-  "contentWarning": "SAFE",
-  "theme": "madara",
+  "contentWarning": "MIXED",
   "sources": [
     {
       "lang": "all",
-      "baseUrl": "https://kodokustudio.com"
+      "baseUrl": "https://kodokueasyaccess.com"
     }
   ]
 }

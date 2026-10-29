@@ -2,7 +2,7 @@
   "pkg": "en.mgreadio",
   "name": "Mgread.io",
   "upstreamVersionCode": 3,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "MIXED",
   "sources": [

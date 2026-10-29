@@ -2,7 +2,7 @@
   "pkg": "en.mangatrend",
   "name": "Manga Trend",
   "upstreamVersionCode": 0,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "SAFE",
   "theme": "mangathemesia",

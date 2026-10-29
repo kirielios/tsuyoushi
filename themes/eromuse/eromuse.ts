@@ -62,7 +62,7 @@ export abstract class EroMuse extends KeiSource {
   // might need to override for new sources
   private readonly nextPageSelector = ".pagination span.current + span a";
   protected albumSelector = "a.c-tile:has(img):not(:has(.members-only))";
-  protected topLevelPathSegment = "comics/album";
+  protected topLevelPathSegment = "porn/album";
 
   private nextPageOrNull(document: Document): string | null {
     const url = document.location();
@@ -200,13 +200,13 @@ export abstract class EroMuse extends KeiSource {
   }
 
   override getPopularManga(page: number): Promise<MangasPage> {
-    return this.fetchManga(`${this.baseUrl}/comics/album/Various-Authors`, page, "");
+    return this.fetchManga(`${this.baseUrl}/porn/album/Various-Authors`, page, "");
   }
 
   // Latest
 
   override getLatestUpdates(page: number): Promise<MangasPage> {
-    return this.fetchManga(`${this.baseUrl}/comics/album/Various-Authors?sort=date`, page, "date");
+    return this.fetchManga(`${this.baseUrl}/porn/album/Various-Authors?sort=date`, page, "date");
   }
 
   // Search
@@ -224,7 +224,7 @@ export abstract class EroMuse extends KeiSource {
         this.pageStack.push({ url: url.toString(), pageType: SEARCH_RESULTS_OR_BASE });
       } else {
         const albumFilter = firstInstance(filters, AlbumFilter).selection();
-        const url = toHttpUrl(`${this.baseUrl}/comics/${albumFilter.pathSegments}`).newBuilder();
+        const url = toHttpUrl(`${this.baseUrl}/porn/${albumFilter.pathSegments}`).newBuilder();
         if (this.currentSortingMode) url.addQueryParameter("sort", this.currentSortingMode);
         if (albumFilter.pageType !== AUTHOR) url.addQueryParameter("page", "1");
         this.pageStack.push({ url: url.toString(), pageType: albumFilter.pageType });
@@ -274,8 +274,8 @@ export abstract class EroMuse extends KeiSource {
 
   // Chapters
 
-  protected linkedChapterSelector = "a.c-tile:has(img)[href*=/comics/album/]";
-  protected pageThumbnailSelector = "a.c-tile:has(img)[href*=/comics/picture/] img";
+  protected linkedChapterSelector = "a.c-tile:has(img)[href*=/porn/album/]";
+  protected pageThumbnailSelector = "a.c-tile:has(img)[href*=/porn/picture/] img";
 
   private async parseChapters(firstPage: Document): Promise<SChapter[]> {
     const parseChapters = async (document: Document, isFirstPage: boolean, chapters: SChapter[]): Promise<SChapter[]> => {

@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://reader.mangatellers.gr"
     }
-  ]
+  ],
+  "broken": "reader.mangatellers.gr answers HTTP 500 'Database error' on every FoOlSlide page (home, directory, latest) (checked 2026-10-29)"
 }

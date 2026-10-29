@@ -2,7 +2,7 @@
   "pkg": "en.eightmuses",
   "name": "8Muses",
   "upstreamVersionCode": 0,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "NSFW",
   "theme": "eromuse",

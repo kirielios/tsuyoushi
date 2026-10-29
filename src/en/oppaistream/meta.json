@@ -10,5 +10,6 @@
       "lang": "en",
       "baseUrl": "https://read.oppai.stream"
     }
-  ]
+  ],
+  "broken": "read.oppai.stream no longer resolves (DNS gone); oppai.stream itself is now video only (no manga reader link) (checked 2026-10-29)"
 }

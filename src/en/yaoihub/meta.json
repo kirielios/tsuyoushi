@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://yaoihub.org"
     }
-  ]
+  ],
+  "broken": "yaoihub.org now serves a single looping-video page (title 'video', Turkish comments) and every Madara path such as /manga/ answers 404; the manga site is gone (checked 2026-10-29)"
 }

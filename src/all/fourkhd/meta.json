@@ -1,8 +1,8 @@
 {
   "pkg": "all.fourkhd",
   "name": "4KHD",
-  "upstreamVersionCode": 3,
-  "port": 1,
+  "upstreamVersionCode": 4,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "NSFW",
   "sources": [

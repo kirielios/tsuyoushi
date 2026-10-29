@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://mangayy.org"
     }
-  ]
+  ],
+  "broken": "removed upstream (keiyoushi #20313, 2026-10-23); mangayy.org lists no manga (checked 2026-10-29)"
 }

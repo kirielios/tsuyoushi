@@ -1,5 +1,10 @@
 // Port of keiyoushi/extensions-source src/en/mgreadio/MgreadIo.kt
 import {
+  Base64,
+  aesCbcDecrypt,
+  fromUtf8,
+  hexBytes,
+  parseAs,
   Filter,
   KeiSource,
   MangasPage,
@@ -19,6 +24,18 @@ import {
 } from "../../../sdk/index.ts";
 import { toSChapter, type ChapterListDto, type MgreadSearchDto } from "./dto.ts";
 import { AgeRatingFilter, GenreFilter, RatingMaxFilter, RatingMinFilter, SortFilter, StatusFilter, TypeFilter, addFilters, type GenreOption } from "./filters.ts";
+
+type EncryptedPayloadDto = { ciphertext: string; iv: string; salt?: string | null; cid?: number | null; e?: number | null; g?: string | null };
+type InitMangaDataDto = { restUrl: string; nonce?: string | null; decryption_key?: string | null };
+
+const ENCRYPTED_CHAPTER_REGEX = /InitMangaEncryptedChapter\s*=\s*(\{[\s\S]*?\})\s*(?:;|$)/;
+const INIT_MANGA_DATA_REGEX = /InitMangaData\s*=\s*(\{[\s\S]*?\})\s*(?:;|$)/;
+
+/** PBKDF2WithHmacSHA512, 999 rounds, 256-bit key, over the base64-decoded passphrase. */
+async function passphraseKey(decryptionKey: string, salt: string): Promise<Uint8Array> {
+  const base = await crypto.subtle.importKey("raw", new Uint8Array(Base64.decode(decryptionKey)), "PBKDF2", false, ["deriveBits"]);
+  return new Uint8Array(await crypto.subtle.deriveBits({ name: "PBKDF2", hash: "SHA-512", salt: hexBytes(salt), iterations: 999 }, base, 256));
+}
 
 const MANGA_ID_MEMO = "mangaId";
 
@@ -152,12 +169,56 @@ export default class MgreadIo extends KeiSource {
   }
 
   async getPageList(chapter: SChapter): Promise<Page[]> {
-    const document = (await this.client.get(this.getChapterUrl(chapter))).asJsoup();
-    const chapterUrl = document.location();
-    return document.select("#chapter-content img[data-original-src], #chapter-content img[src]").map((element, index) => {
-      const original = element.absUrl("data-original-src");
-      return new Page(index, chapterUrl, original.length > 0 ? original : element.absUrl("src"));
+    const chapterUrl = this.getChapterUrl(chapter);
+    const document = (await this.client.get(chapterUrl)).asJsoup();
+    if (document.selectFirst("div.lock-card") != null) return [];
+
+    // InitManga's encrypted reader (lib-multisrc/initmanga InitManga.getPageList): the images are in an AES-CBC
+    // encrypted HTML fragment; the key is derived from a passphrase or fetched from the theme's REST API.
+    const scripts = document.select("script").map((script) => {
+      const b64 = substringAfter(script.attr("src"), "base64,", "");
+      return b64 ? fromUtf8(Base64.decode(b64)) : script.data();
     });
+    const payloadJson = scripts.map((it) => ENCRYPTED_CHAPTER_REGEX.exec(it)?.[1]).find((it) => it != null);
+    if (payloadJson == null) return this.toPages(document.select("#chapter-content img[data-original-src], #chapter-content img[src]"));
+    const payload = parseAs<EncryptedPayloadDto>(payloadJson);
+    const dataJson = scripts.map((it) => INIT_MANGA_DATA_REGEX.exec(it)?.[1]).find((it) => it != null);
+    if (dataJson == null) throw new Error("InitMangaData not found");
+    const data = parseAs<InitMangaDataDto>(dataJson);
+
+    const key = payload.salt != null ? await passphraseKey(data.decryption_key!, payload.salt) : await this.fetchChapterKey(payload, data, chapterUrl);
+    const content = fromUtf8(await aesCbcDecrypt(key, hexBytes(payload.iv), Base64.decode(payload.ciphertext)));
+    return this.toPages(parseHtml(this.host.load, content, this.baseUrl).select("img, canvas[data-enc]"));
+  }
+
+  private async fetchChapterKey(payload: EncryptedPayloadDto, data: InitMangaDataDto, chapterUrl: string): Promise<Uint8Array> {
+    const body = JSON.stringify({ chapter_id: payload.cid, epoch: payload.e, grant: payload.g });
+    const keyUrl = `${data.restUrl}/chapter-key`;
+    const keyHeaders = (nonce: string | null) => {
+      const h = this.headersBuilder();
+      h.set("Referer", chapterUrl);
+      h.set("Content-Type", "application/json; charset=utf-8");
+      if (nonce != null) h.set("X-WP-Nonce", nonce);
+      return h;
+    };
+    // The endpoint also answers without a nonce
+    const nonce = data.nonce ? data.nonce : null;
+    if (nonce != null) {
+      const response = await this.client.post(keyUrl, keyHeaders(nonce), body, { ensureSuccess: false });
+      if (response.isSuccessful) return hexBytes(response.parseAs<{ key: string }>().key);
+    }
+    return hexBytes((await this.client.post(keyUrl, keyHeaders(null), body)).parseAs<{ key: string }>().key);
+  }
+
+  private toPages(elements: Element[]): Page[] {
+    return elements
+      .map((element) => {
+        // Site's initMangaResolveImgSrc
+        if (element.tagName() === "canvas") return fromUtf8(Base64.decode(element.attr("data-enc")).reverse());
+        return ["data-original-src", "data-src", "src"].map((it) => element.absUrl(it)).find((it) => it.length > 0 && !it.startsWith("data:")) ?? null;
+      })
+      .filter((it): it is string => it != null)
+      .map((imageUrl, i) => new Page(i, "", imageUrl));
   }
 
   override get supportsFilterFetching() {

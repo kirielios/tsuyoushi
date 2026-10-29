@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://galaxymanga.io"
     }
-  ]
+  ],
+  "broken": "removed upstream (keiyoushi #20235, 2026-10-22); galaxymanga.io no longer resolves (checked 2026-10-29)"
 }

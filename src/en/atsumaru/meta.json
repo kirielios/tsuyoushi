@@ -10,5 +10,6 @@
       "lang": "en",
       "baseUrl": "https://atsu.moe"
     }
-  ]
+  ],
+  "broken": "atsu.moe answers Cloudflare HTTP 530 'error code: 1033' (origin tunnel down) on every page; upstream still uses atsu.moe; port is at upstream v24, v25 only adds dedup/excluded-scanlator prefs (checked 2026-10-29)"
 }

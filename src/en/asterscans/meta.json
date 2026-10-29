@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://asterscans.com"
     }
-  ]
+  ],
+  "broken": "every asterscans.com page (home included) 302-redirects to their Discord invite; no reader left on the domain (checked 2026-10-29)"
 }

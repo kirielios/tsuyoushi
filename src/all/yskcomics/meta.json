@@ -10,5 +10,6 @@
       "lang": "en",
       "baseUrl": "https://www.ysk-comics.com"
     }
-  ]
+  ],
+  "broken": "www.ysk-comics.com answers Cloudflare 522 (origin unreachable); bare ysk-comics.com does not answer (checked 2026-10-29)"
 }

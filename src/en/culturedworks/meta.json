@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://culturedworks.com"
     }
-  ]
+  ],
+  "broken": "removed upstream as dead (keiyoushi #20237, 2026-10-22); culturedworks.com answers Cloudflare 526 (checked 2026-10-29)"
 }

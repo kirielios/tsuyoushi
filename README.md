@@ -6,7 +6,7 @@
 |-------|---------|
 | [![Publish](https://github.com/kirielios/tsuyoushi/actions/workflows/publish.yml/badge.svg)](https://github.com/kirielios/tsuyoushi/actions/workflows/publish.yml) | [Open an issue](https://github.com/kirielios/tsuyoushi/issues/new) |
 
-[Keiyoushi](https://github.com/keiyoushi/extensions-source) manga extensions (English and Indonesian) and [Aniyomi](https://github.com/yuzono/anime-extensions) anime extensions (Indonesian and multi-language) ported from Kotlin to TypeScript, for **web-based readers and players**.
+[Keiyoushi](https://github.com/keiyoushi/extensions-source) manga extensions (English and Indonesian) and [Aniyomi](https://github.com/yuzono/anime-extensions) anime extensions (English, Indonesian and multi-language) ported from Kotlin to TypeScript, for **web-based readers and players**.
 
 Anime extensions are marked `"kind": "anime"` in `index.json`. A port whose site no longer works (dead domain, a player only a WebView can run) keeps its code in `src/` but carries `"broken": "<why>"` in `meta.json`, and the build leaves it out of the index. They speak Aniyomi's AnimeHttpSource contract (`sdk/anime.ts`): the host asks `getVideos(episode)` and gets each video's URL with the headers its host needs (Referer, Origin), which the player must send with every request of that video.
 

@@ -39,9 +39,7 @@ interface EmbeddedDto {
 const IMAGE_URL_REGEX = /\.(?:jpe?g|png|webp|gif|avif)(?:$|\?)/i;
 const SLUG_PATH_REGEX = /\/([^/]+)\.html(?:\/\d+)?\/?$/;
 const CONTENT_PATH_REGEX = /^\/content\//i;
-const DEEPLINK_HOSTS = new Set(["zgmz.uuss.uk", "4khd.com"]);
-const THUMBNAIL_CDN_HOST = "img.4khd.com";
-const PAGE_CDN_HOST = "img.uuss.uk";
+const DEEPLINK_HOSTS = new Set(["4khd.com", "www.4khd.com"]);
 const POST_ID_QUERY = "post_id";
 
 /** Kotlin's String.trim(char) */
@@ -221,9 +219,9 @@ export default class FourKHD extends KeiSource {
 
   private thumbnailUrl(post: PostDto): string | null {
     const jetpack = post.jetpack_featured_media_url;
-    if (jetpack != null) return this.normalizeImageUrl(jetpack, true);
+    if (jetpack != null) return jetpack;
     const embedded = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
-    if (embedded != null) return this.normalizeImageUrl(embedded, true);
+    if (embedded != null) return embedded;
     return this.extractImageUrlsFromHtml(post.content?.rendered ?? "")[0] ?? null;
   }
 
@@ -273,7 +271,6 @@ export default class FourKHD extends KeiSource {
       .select("img[data-src], img[data-lazy-src], img[src]")
       .map((imageElement) => ["abs:data-src", "abs:data-lazy-src", "abs:src"].map((key) => imageElement.attr(key).trim()).find((it) => this.isImageUrl(it)))
       .filter((it) => it != null)
-      .map((it) => this.normalizeImageUrl(it, false))
       .filter((it) => !isBlank(it));
 
     if (imageSources.length) return distinctBy(imageSources, (it) => this.imageCanonicalKey(it));
@@ -282,7 +279,6 @@ export default class FourKHD extends KeiSource {
       .select("a[href]")
       .map((it) => it.attr("abs:href").trim())
       .filter((it) => this.isImageUrl(it))
-      .map((it) => this.normalizeImageUrl(it, false))
       .filter((it) => !isBlank(it));
 
     return distinctBy(anchorSources, (it) => this.imageCanonicalKey(it));
@@ -294,25 +290,6 @@ export default class FourKHD extends KeiSource {
     const u = parsed.toURL();
     u.search = "";
     return u.href;
-  }
-
-  private normalizeImageUrl(url: string, forThumbnail = false): string {
-    const unescaped = url.replaceAll("\\/", "/").replaceAll("&amp;", "&").trim();
-
-    const parsed = toHttpUrlOrNull(unescaped);
-    if (!parsed) return unescaped;
-    const host = parsed.host.toLowerCase();
-
-    const isJetpackProxy = host.startsWith("i") && host.endsWith(".wp.com");
-    const rawPath = parsed.encodedPath.replace(/^\//, "");
-
-    if (!isJetpackProxy || !rawPath.startsWith("pic.4khd.com/")) return unescaped;
-
-    const targetHost = forThumbnail ? THUMBNAIL_CDN_HOST : PAGE_CDN_HOST;
-    const mappedPath = rawPath.replace(/^pic\.4khd\.com\//, "");
-    const queryPart = parsed.encodedQuery != null ? `?${parsed.encodedQuery}` : "";
-
-    return `https://${targetHost}/${mappedPath}${queryPart}`;
   }
 
   private htmlToText(html: string): string {

@@ -1,15 +1,15 @@
 {
   "pkg": "en.elftoon",
   "name": "Elf Toon",
-  "upstreamVersionCode": 3,
-  "port": 1,
+  "upstreamVersionCode": 4,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "SAFE",
-  "theme": "mangathemesia",
+  "theme": "vinetheme",
   "sources": [
     {
       "lang": "en",
-      "baseUrl": "https://elftoon.com"
+      "baseUrl": "https://elftoon.net"
     }
   ]
 }

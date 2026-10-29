@@ -10,5 +10,6 @@
       "lang": "en",
       "baseUrl": "https://saymanhwa.com"
     }
-  ]
+  ],
+  "broken": "saymanhwa.com no longer resolves (DNS gone); the site moved to saymanhwa.net, which all.saymanhwa covers (en and others); upstream still points at .com (checked 2026-10-29)"
 }

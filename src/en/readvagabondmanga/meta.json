@@ -2,7 +2,7 @@
   "pkg": "en.readvagabondmanga",
   "name": "Read Vagabond Manga",
   "upstreamVersionCode": 0,
-  "port": 1,
+  "port": 2,
   "libVersion": "1.6",
   "contentWarning": "SAFE",
   "sources": [

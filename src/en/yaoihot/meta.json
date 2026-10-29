@@ -10,5 +10,6 @@
       "lang": "en",
       "baseUrl": "https://yaoihot.com"
     }
-  ]
+  ],
+  "broken": "every yaoihot.com title page shows 'No chapters available yet.' (9 of the home page titles checked) and the WP REST API has no chapter route; the site serves no chapters (checked 2026-10-29)"
 }

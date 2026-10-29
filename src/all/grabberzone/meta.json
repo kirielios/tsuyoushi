@@ -11,5 +11,6 @@
       "lang": "all",
       "baseUrl": "https://grabber.zone"
     }
-  ]
+  ],
+  "broken": "grabber.zone answers Cloudflare 522 (origin unreachable) after ~20 s on every page (checked 2026-10-29)"
 }

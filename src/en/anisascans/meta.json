@@ -11,5 +11,6 @@
       "lang": "en",
       "baseUrl": "https://anisascans.in"
     }
-  ]
+  ],
+  "broken": "anisascans.in no longer resolves (DNS gone); anisascans.com is a for-sale parking page, .net/.org do not resolve; no new domain found (checked 2026-10-29)"
 }
