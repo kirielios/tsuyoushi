@@ -12,7 +12,9 @@ import {
   type Element,
   type FilterList,
   type Hoster,
+  type Page,
   type PreferenceScreen,
+  type Request,
   type Response,
 } from "../../../sdk/index.ts";
 import { OkruExtractor } from "../../../libs/okruextractor/index.ts";
@@ -34,9 +36,17 @@ const PREF_SERVER_DEFAULT = "StreamWish";
  */
 const SERVER_LIST = ["StreamWish", "Voe", "Okru", "YourUpload", "FileLions", "StreamHideVid", "TurboPlay"];
 
-const IMAGE_LINK_REGEX = /https?:\/\/\S+\.(jpg|png)/;
+// webp, jpeg and avif too, and never past a quote (a lazy-loaded poster keeps its URL in data-src, found in the outer HTML)
+const IMAGE_LINK_REGEX = /https?:\/\/[^\s"'<>]+?\.(?:jpe?g|png|webp|avif)/;
 
 export default class Javgg extends AnimeHttpSource {
+  // posters on the site's own hosts may refuse requests that do not come from it
+  override imageRequest(page: Page): Request {
+    const headers = this.headersBuilder();
+    headers.set("Referer", `${this.baseUrl}/`);
+    return GET(page.imageUrl!, headers);
+  }
+
   protected animeDetailsParse(response: Response): SAnime {
     const document = response.asJsoup();
     const animeDetails = SAnime.create();
