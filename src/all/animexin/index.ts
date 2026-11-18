@@ -1,5 +1,5 @@
 // Port of yuzono/anime-extensions src/all/animexin/AnimeXin.kt
-import { ListPreference, type Document, type PreferenceScreen, type Video } from "../../../sdk/index.ts";
+import { GET, ListPreference, type Document, type Page, type PreferenceScreen, type Request, type Video } from "../../../sdk/index.ts";
 import { AnimeStream } from "../../../themes/animestream/index.ts";
 import { DailymotionExtractor } from "../../../libs/dailymotionextractor/index.ts";
 import { DoodExtractor } from "../../../libs/doodextractor/index.ts";
@@ -13,6 +13,13 @@ const PREF_LANG_DEFAULT = "All Sub";
 const PREF_LANG_VALUES = ["All Sub", "Arabic", "English", "German", "Indonesia", "Italian", "Polish", "Portuguese", "Spanish", "Thai", "Turkish"];
 
 export default class AnimeXin extends AnimeStream {
+  // the site's covers answer 403 unless the request carries the site as its Referer
+  override imageRequest(page: Page): Request {
+    const headers = this.headersBuilder();
+    headers.set("Referer", `${this.baseUrl}/`);
+    return GET(page.imageUrl!, headers);
+  }
+
   private get langPref() {
     return this.preferences.getString(PREF_LANG_KEY, PREF_LANG_DEFAULT) ?? PREF_LANG_DEFAULT;
   }
